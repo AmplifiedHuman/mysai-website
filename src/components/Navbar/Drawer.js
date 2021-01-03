@@ -17,7 +17,7 @@ import { FiMenu } from '@react-icons/all-files/fi/FiMenu';
 
 const NavigationDrawer = props => {
   const {
-    color: { variant, colorScheme },
+    color: { variant },
     icon,
   } = props;
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -29,7 +29,7 @@ const NavigationDrawer = props => {
         ref={btnRef}
         onClick={onOpen}
         variant={variant}
-        colorScheme={icon.colorScheme}
+        colorScheme={icon.scheme}
         icon={<FiMenu size={icon.size} />}
       />
       <Drawer
@@ -56,7 +56,6 @@ const NavigationDrawer = props => {
                 align="center"
                 mx="8"
                 variant={variant}
-                colorScheme={colorScheme}
               >
                 {props.children}
                 <Divider />
@@ -75,12 +74,12 @@ const NavigationDrawer = props => {
 
 NavigationDrawer.propTypes = {
   color: PropTypes.shape({
-    colorScheme: PropTypes.string,
+    scheme: PropTypes.string,
     variant: PropTypes.string,
   }),
   icon: PropTypes.shape({
     size: PropTypes.string,
-    colorScheme: PropTypes.string,
+    scheme: PropTypes.string,
   }),
   children: PropTypes.node,
 };

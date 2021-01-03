@@ -7,13 +7,13 @@ import { FiSun } from '@react-icons/all-files/fi/FiSun';
 const Toggle = props => {
   const { colorMode, toggleColorMode } = useColorMode();
   const {
-    icon: { size, colorScheme, variant },
+    icon: { size, scheme, variant },
   } = props;
   return (
     <IconButton
       aria-label="Dark Mode Toggle"
       onClick={() => toggleColorMode()}
-      colorScheme={colorScheme}
+      colorScheme={scheme}
       variant={variant}
       icon={
         colorMode === 'light' ? <FiMoon size={size} /> : <FiSun size={size} />
@@ -25,7 +25,7 @@ const Toggle = props => {
 Toggle.propTypes = {
   icon: PropTypes.shape({
     size: PropTypes.string,
-    colorScheme: PropTypes.string,
+    scheme: PropTypes.string,
     variant: PropTypes.string,
   }),
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import { useColorMode, Box } from '@chakra-ui/react';
 
@@ -26,11 +26,11 @@ const Logo = () => {
   const light = data.lightImage.childImageSharp.fluid;
   const dark = data.darkImage.childImageSharp.fluid;
   return (
-    <Box w='44' px='4' py='2'>
-      <Img
-        fluid={colorMode === 'light' ? light : dark}
-      />
-    </Box>
+    <Link to="/">
+      <Box w="44" px="4" py="2">
+        <Img fluid={colorMode === 'light' ? light : dark} />
+      </Box>
+    </Link>
   );
 };
 

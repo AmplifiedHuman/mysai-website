@@ -1,22 +1,23 @@
 import React from 'react';
 import { Flex, ButtonGroup, Spacer, Box, Button } from '@chakra-ui/react';
 
-import Logo from '../ui/Logo';
+import Logo from './Logo';
 import Toggle from './Toggle';
 import NavigationDrawer from './Drawer';
 
 const NavBar = () => {
-  const colorOptions = { variant: 'ghost', colorScheme: 'gray' };
-  const iconOptions = { size: '30px', colorScheme: 'blue', variant: 'ghost' };
-  const routes = ['Home', 'About Us', 'Events']
+  const colorOptions = { variant: 'ghost', scheme: 'gray' };
+  const iconOptions = { size: '30px', scheme: 'blue', variant: 'ghost' };
+  const routes = ['Home', 'About Us', 'Events'];
   let buttons = (
     <>
       {routes.map(route => {
         return (
           <Button
+            key={route}
             variant={colorOptions.variant}
-            colorScheme={colorOptions.colorScheme}
-            size='md'
+            colorScheme={colorOptions.scheme}
+            size="md"
           >
             {route}
           </Button>
