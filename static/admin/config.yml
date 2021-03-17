@@ -1,0 +1,35 @@
+backend:
+  name: git-gateway
+  branch: master
+  commit_messages:
+    create: 'Created {{collection}} “{{slug}}”'
+    update: 'Updated {{collection}} “{{slug}}”'
+    delete: 'Deleted {{collection}} “{{slug}}”'
+    uploadMedia: '[skip ci] Upload “{{path}}”'
+    deleteMedia: '[skip ci] Delete “{{path}}”'
+media_folder: static/img
+public_folder: /img
+local_backend: true
+
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: amplifiedhuman
+    api_key: 535737922696235
+
+collections:
+  - name: 'pages'
+    label: 'Pages'
+    files:
+      - file: 'src/pages/index.md'
+        label: 'Landing Page'
+        name: 'index'
+        fields:
+          - {
+              label: 'Template Key',
+              name: 'templateKey',
+              widget: 'hidden',
+              default: 'index-page',
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: Image, name: image, widget: image }

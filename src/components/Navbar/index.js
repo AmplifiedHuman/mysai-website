@@ -8,7 +8,7 @@ import NavigationDrawer from './Drawer';
 const NavBar = () => {
   const colorOptions = { variant: 'ghost', scheme: 'gray' };
   const iconOptions = { size: '30px', scheme: 'blue', variant: 'ghost' };
-  const routes = ['Home', 'About Us', 'Events'];
+  const routes = ['Home', 'About Us', 'Events', 'Join Us'];
   let buttons = (
     <>
       {routes.map(route => {
@@ -23,6 +23,7 @@ const NavBar = () => {
           </Button>
         );
       })}
+      <Button variant='outline' colorScheme='blue' size='md'>Contact</Button>
       <Toggle icon={iconOptions} />
     </>
   );
@@ -32,7 +33,7 @@ const NavBar = () => {
       <Logo />
       <Spacer />
       <ButtonGroup
-        spacing="5"
+        spacing="3"
         mr="4"
         display={['none', 'none', 'block', 'block']}
       >

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import { useColorMode, Box } from '@chakra-ui/react';
 
 const Logo = () => {
@@ -9,26 +9,22 @@ const Logo = () => {
     query {
       lightImage: file(relativePath: { eq: "logo.png" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: CONSTRAINED)
         }
       }
       darkImage: file(relativePath: { eq: "logo-dark.png" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: CONSTRAINED)
         }
       }
     }
   `);
-  const light = data.lightImage.childImageSharp.fluid;
-  const dark = data.darkImage.childImageSharp.fluid;
+  const light = data.lightImage.childImageSharp.gatsbyImageData;
+  const dark = data.darkImage.childImageSharp.gatsbyImageData;
   return (
     <Link to="/">
-      <Box w="44" px="4" py="2">
-        <Img fluid={colorMode === 'light' ? light : dark} />
+      <Box w="40" px="4" py="2">
+        <GatsbyImage image={colorMode === 'light' ? light : dark} />
       </Box>
     </Link>
   );
