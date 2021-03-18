@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
   return (
     <Flex direction="column" height="100vh">
       <NavBar />
-      <Container maxW="6xl" my="8">
+      <Container maxW="7xl" my="8" px='10'>
         {children}
       </Container>
       <Spacer />

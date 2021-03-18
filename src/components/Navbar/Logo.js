@@ -24,7 +24,10 @@ const Logo = () => {
   return (
     <Link to="/">
       <Box w="40" px="4" py="2">
-        <GatsbyImage image={colorMode === 'light' ? light : dark} />
+        <GatsbyImage
+          image={colorMode === 'light' ? light : dark}
+          alt="MYSAI logo"
+        />
       </Box>
     </Link>
   );
