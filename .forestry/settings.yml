@@ -8,7 +8,7 @@ sections:
   path: src/pages
   label: Content
   create: all
-  match: "**/*"
+  match: index.md
   templates:
   - home-page
 upload_dir: ''
