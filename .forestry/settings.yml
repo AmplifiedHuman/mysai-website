@@ -9,6 +9,8 @@ sections:
   label: Content
   create: all
   match: "**/*"
+  templates:
+  - home-page
 upload_dir: ''
 public_path: https://res.cloudinary.com/mysai/image/upload
 front_matter_path: ''
