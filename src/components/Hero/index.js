@@ -56,9 +56,9 @@ const Hero = () => {
                 mx={{ sm: 'auto', lg: 0 }}
                 color="gray.500"
               >
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-                lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-                fugiat aliqua.
+                The Malaysian Student Association of Ireland (MYSAI) a national
+                student organization based in Ireland set up to provide welfare
+                for the Malaysian student community.
               </Text>
               <Stack
                 direction="row"
@@ -82,7 +82,7 @@ const Hero = () => {
         <StaticImage
           src="https://res.cloudinary.com/mysai/image/upload/v1616035966/image15_mqjweb.jpg"
           alt="MYSAI Group Photo"
-          style={{borderRadius: '5px'}}
+          style={{ borderRadius: '5px' }}
         />
       </Box>
     </Stack>
