@@ -1,9 +1,16 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: /static/admin
+admin_path: "/static/admin"
 webhook_url: 
-sections: 
+sections:
+- type: directory
+  path: src/pages
+  label: Content
+  create: all
+  match: index.md
+  templates:
+  - home-page
 upload_dir: ''
 public_path: https://res.cloudinary.com/mysai/image/upload
 front_matter_path: ''

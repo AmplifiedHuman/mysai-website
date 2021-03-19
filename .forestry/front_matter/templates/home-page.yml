@@ -1,0 +1,53 @@
+---
+label: home-page
+hide_body: true
+fields:
+- name: description
+  type: text
+  config:
+    required: true
+  label: description
+  description: Description of the site
+  default: The Malaysian Student Association of Ireland (MYSAI) a national                 student
+    organization based in Ireland set up to provide welfare for the Malaysian student
+    community.
+- name: main-image
+  type: file
+  config:
+    maxSize: 5
+  label: main-image
+  description: Front image of the site
+  default: "/v1616035966/image15_mqjweb.jpg"
+- name: info
+  type: field_group_list
+  fields:
+  - name: info-item
+    type: field_group
+    config: {}
+    fields:
+    - name: info-title
+      type: text
+      config:
+        required: false
+      label: info-title
+      description: Information Title
+      default: Uniting Malaysians
+    - name: info-description
+      type: text
+      config:
+        required: false
+      label: info-description
+      description: Information Description
+      default: The Malaysian Student Association of Ireland (MYSAI) a national student
+        organization based in Ireland set up to provide welfare for the Malaysian
+        student community. We are a diverse yet united team of passionate and driven
+        Malaysian students coming from 14 different institutions/universities all
+        over Ireland with various academic backgrounds.
+    label: info-item
+    description: Info Item
+  config:
+    min: 3
+    max: 3
+    labelField: 
+  label: Info
+  description: Information about the society
