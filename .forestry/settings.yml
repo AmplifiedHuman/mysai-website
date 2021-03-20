@@ -11,8 +11,8 @@ sections:
   match: index.md
   templates:
   - home-page
-upload_dir: ''
-public_path: ''
+upload_dir: static/images
+public_path: "/static/images"
 front_matter_path: ''
 use_front_matter_path: 
 file_template: ":filename:"
