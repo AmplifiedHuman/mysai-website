@@ -1,12 +1,38 @@
 import { Button } from '@chakra-ui/button';
 import { useColorModeValue } from '@chakra-ui/color-mode';
+import { Image } from '@chakra-ui/image';
 import { Stack } from '@chakra-ui/layout';
 import { Text } from '@chakra-ui/layout';
 import { Box } from '@chakra-ui/layout';
-import { StaticImage } from 'gatsby-plugin-image';
+import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 
 const Hero = () => {
+  const data = useStaticQuery(graphql`
+    query HeroQuery {
+      site {
+        siteMetadata {
+          cloudinary_url
+        }
+      }
+      allMarkdownRemark(
+        filter: { frontmatter: { templateKey: { eq: "index-template" } } }
+      ) {
+        edges {
+          node {
+            id
+            frontmatter {
+              description
+              main_image
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  const { edges } = data.allMarkdownRemark;
+  const { frontmatter } = edges[0].node;
   return (
     <Stack
       alignItems="center"
@@ -56,9 +82,7 @@ const Hero = () => {
                 mx={{ sm: 'auto', lg: 0 }}
                 color="gray.500"
               >
-                The Malaysian Student Association of Ireland (MYSAI) a national
-                student organization based in Ireland set up to provide welfare
-                for the Malaysian student community.
+                {frontmatter.description}
               </Text>
               <Stack
                 direction="row"
@@ -79,9 +103,9 @@ const Hero = () => {
         </Box>
       </Box>
       <Box w="full" maxW="650px">
-        <StaticImage
-          src="https://res.cloudinary.com/mysai/image/upload/v1616035966/image15_mqjweb.jpg"
-          alt="MYSAI Group Photo"
+        <Image
+          // src={cloudinary_url + frontmatter.main_image}
+          alt="MYSAI Photo"
           style={{ borderRadius: '5px' }}
         />
       </Box>
