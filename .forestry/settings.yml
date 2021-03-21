@@ -9,6 +9,8 @@ sections:
   label: Events
   create: all
   match: "**/*.md"
+  templates:
+  - event
 - type: directory
   path: src/pages
   label: Content
