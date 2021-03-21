@@ -17,18 +17,20 @@ fields:
   config:
     required: true
     date_format: DD/MM/YYYY
-    time_format: 
+    time_format: h:mm A
     display_utc: false
+    export_format: YYYY-MM-DD h:mm A
   default: now
 - name: event_date
   type: datetime
   label: Event Date
-  description: Date of the event
+  description: Date and time of the event
   config:
     required: true
     date_format: DD/MM/YYYY
-    time_format: 
+    time_format: h:mm A
     display_utc: false
+    export_format: YYYY-MM-DD h:mm A
   default: now
 - name: featured_image
   type: file
