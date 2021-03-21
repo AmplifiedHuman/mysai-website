@@ -7,7 +7,7 @@ sections:
 - type: directory
   path: src/pages
   label: Content
-  create: all
+  create: none
   match: index.md
   templates:
   - home-page
