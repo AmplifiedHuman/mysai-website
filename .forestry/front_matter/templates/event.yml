@@ -68,3 +68,5 @@ fields:
     maxSize: 1
   label: Featured Image
   description: Thumbnail image of event
+pages:
+- src/pages/events/mysai-sample-event.md
