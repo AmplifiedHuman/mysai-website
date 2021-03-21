@@ -11,7 +11,8 @@ import { FaHeart } from '@react-icons/all-files/fa/FaHeart';
 import { FaMagic } from '@react-icons/all-files/fa/FaMagic';
 import { BsPeopleFill } from '@react-icons/all-files/bs/BsPeopleFill';
 
-export default function Intro() {
+const Intro = props => {
+  const { info } = props;
   const Feature = props => {
     return (
       <Box>
@@ -53,30 +54,20 @@ export default function Intro() {
         mx="auto"
         bg={useColorModeValue('white', 'gray.800')}
       >
-        <Feature title="Uniting Malaysians" icon={<FaHeart />}>
-          The Malaysian Student Association of Ireland (MYSAI) a national
-          student organization based in Ireland set up to provide welfare for
-          the Malaysian student community. We are a diverse yet united team of
-          passionate and driven Malaysian students coming from 14 different
-          institutions/universities all over Ireland with various academic
-          backgrounds.
+        <Feature title={info[0].info_item.info_title} icon={<FaHeart />}>
+          {info[0].info_item.info_item_description}
         </Feature>
 
-        <Feature title="Developing Talent" icon={<FaMagic />}>
-          Within our association, we also made it our goal to develop leadership
-          skills and technical intellect which could improve career prospects.
-          Consisting of up to 40 committee members, MYSAI holds frequent welfare
-          related events aiming to enhance Malaysian students’ experience of
-          studying in Ireland both intellectually and ethically.
+        <Feature title={info[1].info_item.info_title} icon={<FaMagic />}>
+          {info[1].info_item.info_item_description}
         </Feature>
 
-        <Feature title="Community Development" icon={<BsPeopleFill />}>
-          We believe that building up a community is the key to the empowerment
-          of our students therefore it is our aim to unite Malaysian students
-          under our umbrella organization, establishing a safe space which
-          students can provide mutual support and seek help in times of need.
+        <Feature title={info[2].info_item.info_title} icon={<BsPeopleFill />}>
+          {info[2].info_item.info_item_description}
         </Feature>
       </SimpleGrid>
     </Flex>
   );
-}
+};
+
+export default Intro;

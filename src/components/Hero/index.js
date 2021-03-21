@@ -3,40 +3,11 @@ import { useColorModeValue } from '@chakra-ui/color-mode';
 import { Stack } from '@chakra-ui/layout';
 import { Text } from '@chakra-ui/layout';
 import { Box } from '@chakra-ui/layout';
-import { graphql, useStaticQuery } from 'gatsby';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import React from 'react';
 
-const Hero = () => {
-  const data = useStaticQuery(graphql`
-    query HeroQuery {
-      allMarkdownRemark(
-        filter: { frontmatter: { templateKey: { eq: "index-template" } } }
-      ) {
-        edges {
-          node {
-            id
-            frontmatter {
-              description
-              main_image {
-                childImageSharp {
-                  gatsbyImageData(
-                    layout: FULL_WIDTH
-                    placeholder: BLURRED
-                    formats: [AUTO, WEBP, AVIF]
-                  )
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  `);
-
-  const { edges } = data.allMarkdownRemark;
-  const { frontmatter } = edges[0].node;
-  const image = getImage(frontmatter.main_image);
+const Hero = props => {
+  const { description, frontImage } = props;
   return (
     <Stack
       alignItems="center"
@@ -86,7 +57,7 @@ const Hero = () => {
                 mx={{ sm: 'auto', lg: 0 }}
                 color="gray.500"
               >
-                {frontmatter.description}
+                {description}
               </Text>
               <Stack
                 direction="row"
@@ -108,7 +79,7 @@ const Hero = () => {
       </Box>
       <Box w="full" maxW="650px">
         <GatsbyImage
-          image={image}
+          image={frontImage}
           alt="MYSAI Photo"
           style={{ borderRadius: '5px' }}
         />
