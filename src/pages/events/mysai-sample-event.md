@@ -1,11 +1,12 @@
 ---
 templatekey: event-template
-title: MYSAI Sample Event
+title: MYSAI Sample Event Test
 description: This is a sample text about the event.
 created_date: 2021-03-21 10:53 PM
 event_start: 2021-03-24 8:00 AM
 event_end: 2021-03-24 10:00 AM
 featured_image: content/images/mysai_cover.jpg
+templateKey: ''
 
 ---
 Here's some sample text describing the event.
