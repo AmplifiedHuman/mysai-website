@@ -5,6 +5,11 @@ admin_path: "/static/admin"
 webhook_url: 
 sections:
 - type: directory
+  path: src/pages/events
+  label: Events
+  create: all
+  match: "**/*.md"
+- type: directory
   path: src/pages
   label: Content
   create: none
