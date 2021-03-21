@@ -3,7 +3,7 @@ label: Event
 hide_body: false
 display_field: title
 fields:
-- name: templatekey
+- name: templateKey
   type: text
   config:
     required: true
