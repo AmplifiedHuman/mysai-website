@@ -3,6 +3,13 @@ label: Event
 hide_body: false
 display_field: title
 fields:
+- name: templatekey
+  type: text
+  config:
+    required: true
+  label: templateKey
+  hidden: true
+  default: event-template
 - name: title
   type: text
   config:
@@ -10,6 +17,19 @@ fields:
   label: Title
   description: Title of event
   default: New Event
+- name: description
+  type: textarea
+  default: Some description text here.
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+    min: 10
+    max: 250
+  label: Description
+  description: Short description of the post (limit it to less than 250 characters)
+  hidden: false
 - name: created_date
   type: datetime
   label: Created Date
@@ -21,27 +41,30 @@ fields:
     display_utc: false
     export_format: YYYY-MM-DD h:mm A
   default: now
-- name: event_date
+- name: event_start
   type: datetime
-  label: Event Date
-  description: Date and time of the event
+  label: Event Start Time
+  description: Start time of the event
   config:
     required: true
     date_format: DD/MM/YYYY
     time_format: h:mm A
     display_utc: false
     export_format: YYYY-MM-DD h:mm A
-  default: now
+  default: ''
+- name: event_end
+  type: datetime
+  label: Event End Time
+  description: End time of the event
+  config:
+    required: true
+    date_format: DD/MM/YYYY
+    time_format: h:mm A
+    display_utc: false
+    export_format: YYYY-MM-DD h:mm A
 - name: featured_image
   type: file
   config:
     maxSize: 1
   label: Featured Image
   description: Thumbnail image of event
-- name: templatekey
-  type: text
-  config:
-    required: true
-  label: templateKey
-  hidden: true
-  default: event-template
