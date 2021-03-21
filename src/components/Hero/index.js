@@ -1,20 +1,15 @@
 import { Button } from '@chakra-ui/button';
 import { useColorModeValue } from '@chakra-ui/color-mode';
-import { Image } from '@chakra-ui/image';
 import { Stack } from '@chakra-ui/layout';
 import { Text } from '@chakra-ui/layout';
 import { Box } from '@chakra-ui/layout';
 import { graphql, useStaticQuery } from 'gatsby';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import React from 'react';
 
 const Hero = () => {
   const data = useStaticQuery(graphql`
     query HeroQuery {
-      site {
-        siteMetadata {
-          cloudinary_url
-        }
-      }
       allMarkdownRemark(
         filter: { frontmatter: { templateKey: { eq: "index-template" } } }
       ) {
@@ -23,7 +18,15 @@ const Hero = () => {
             id
             frontmatter {
               description
-              main_image
+              main_image {
+                childImageSharp {
+                  gatsbyImageData(
+                    layout: FULL_WIDTH
+                    placeholder: BLURRED
+                    formats: [AUTO, WEBP, AVIF]
+                  )
+                }
+              }
             }
           }
         }
@@ -33,6 +36,7 @@ const Hero = () => {
 
   const { edges } = data.allMarkdownRemark;
   const { frontmatter } = edges[0].node;
+  const image = getImage(frontmatter.main_image);
   return (
     <Stack
       alignItems="center"
@@ -103,8 +107,8 @@ const Hero = () => {
         </Box>
       </Box>
       <Box w="full" maxW="650px">
-        <Image
-          // src={cloudinary_url + frontmatter.main_image}
+        <GatsbyImage
+          image={image}
           alt="MYSAI Photo"
           style={{ borderRadius: '5px' }}
         />

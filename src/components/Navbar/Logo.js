@@ -9,12 +9,20 @@ const Logo = () => {
     query {
       lightImage: file(relativePath: { eq: "logo.png" }) {
         childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED)
+          gatsbyImageData(
+            layout: CONSTRAINED
+            placeholder: BLURRED
+            formats: [AUTO, WEBP, AVIF]
+          )
         }
       }
       darkImage: file(relativePath: { eq: "logo-dark.png" }) {
         childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED)
+          gatsbyImageData(
+            layout: CONSTRAINED
+            placeholder: BLURRED
+            formats: [AUTO, WEBP, AVIF]
+          )
         }
       }
     }

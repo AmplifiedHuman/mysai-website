@@ -25,6 +25,6 @@ info:
 description: The Malaysian Student Association of Ireland (MYSAI) a national student
   organisation based in Ireland set up to provide welfare for the Malaysian student
   community.
-main-image: "/images/mysai_cover.jpg"
+main-image: "/content/images/mysai_cover.jpg"
 
 ---
