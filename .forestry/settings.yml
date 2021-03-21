@@ -7,7 +7,7 @@ sections:
 - type: directory
   path: src/pages/events
   label: Events
-  create: all
+  create: documents
   match: "**/*.md"
   templates:
   - event
