@@ -1,5 +1,5 @@
 ---
-templatekey: event-template
+templateKey: event-template
 title: MYSAI Sample Event Test
 description: This is a sample text about the event.
 created_date: 2021-03-21 10:53 PM
