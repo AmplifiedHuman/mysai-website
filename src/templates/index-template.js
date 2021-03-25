@@ -6,6 +6,8 @@ import SEO from '../components/SEO';
 import Hero from '../components/Hero';
 import Intro from '../components/Intro';
 import { getImage } from 'gatsby-plugin-image';
+import UpcomingEvents from '../components/UpcomingEvents';
+import NewBlogPosts from '../components/NewBlogPosts';
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
@@ -16,6 +18,8 @@ const IndexPage = ({ data }) => {
       <SEO title="Home" />
       <Hero description={frontmatter.description} frontImage={image} />
       <Intro info={info} />
+      <UpcomingEvents />
+      <NewBlogPosts />
       <Link to="/page-2/">Go to page 2</Link> <br />
     </Layout>
   );

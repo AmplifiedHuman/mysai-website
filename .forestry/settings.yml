@@ -18,8 +18,8 @@ sections:
   match: index.md
   templates:
   - home-page
-upload_dir: content/images
-public_path: "/content/images"
+upload_dir: static/img
+public_path: "/img"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"

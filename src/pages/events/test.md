@@ -35,10 +35,12 @@ It is a long established fact that a reader will be distracted by the readable c
 
 > "This is some test quote"
 
+> "This is some test quote"
+
 ![MYSAI Group Photo](/img/mysai_cover.jpg 'MYSAI Group Photo')
 
 1. Bird
 2. McHale
 3. Parish
 
-Hopefully everyone can attend! My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
+Fuck My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
