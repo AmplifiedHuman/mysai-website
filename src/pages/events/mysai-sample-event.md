@@ -7,7 +7,7 @@ event_start: 2021-03-27T08:02
 event_end: 2021-03-27T10:02
 featured_image: "/content/images/mysai_cover.jpg"
 location: 31 Leeson Park, Ranelagh, Dublin, D06 E8H1, Ireland
-event_link: https://www.google.com/
+event_link: ''
 
 ---
 Here's some sample text describing the event.
