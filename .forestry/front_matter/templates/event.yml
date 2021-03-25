@@ -17,19 +17,6 @@ fields:
   label: Title
   description: Title of event
   default: New Event
-- name: description
-  type: textarea
-  default: Some description text here.
-  config:
-    required: true
-    wysiwyg: false
-    schema:
-      format: markdown
-    min: 10
-    max: 250
-  label: Description
-  description: Short description of the post (limit it to less than 250 characters)
-  hidden: false
 - name: created_date
   type: datetime
   label: Created Date
@@ -68,5 +55,19 @@ fields:
     maxSize: 1
   label: Featured Image
   description: Thumbnail image of event
+- name: location
+  type: text
+  config:
+    required: true
+  label: Location
+  description: Location of event, enter "Virtual" if it's an online event, otherwise
+    enter the address
+- name: event_link
+  type: text
+  config:
+    required: false
+  label: Event Link
+  description: Enter url for online event or google maps link for in person events.
+    (If this is a past event, leave empty to remove link)
 pages:
 - src/pages/events/mysai-sample-event.md
