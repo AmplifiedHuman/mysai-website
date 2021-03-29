@@ -27,6 +27,7 @@ export default function BlogCard() {
           }
           style={{ height: '100%', width: '100%' }}
           transformOptions={{ fit: 'contain' }}
+          alt=""
         />
       </Box>
       <Stack>

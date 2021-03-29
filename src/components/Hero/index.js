@@ -33,7 +33,7 @@ const Hero = props => {
               justifyContent="center"
               alignItems="center"
             >
-              <Text
+              <Box
                 fontSize={['3xl', '4xl', '4xl', '4xl', '5xl']}
                 letterSpacing="tight"
                 lineHeight="short"
@@ -49,7 +49,7 @@ const Hero = props => {
                 >
                   Ireland
                 </Text>
-              </Text>
+              </Box>
               <Text
                 mt={{ base: 3, sm: 5, md: 5 }}
                 fontSize={{ sm: 'lg', md: 'xl' }}

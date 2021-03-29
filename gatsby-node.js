@@ -1,6 +1,5 @@
 const path = require('path');
 const { createFilePath } = require('gatsby-source-filesystem');
-const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
 
@@ -38,6 +37,7 @@ exports.createPages = ({ actions, graphql }) => {
         // additional data can be passed via context
         context: {
           id,
+          currentDate: getCurrentDate(),
         },
       });
     });
@@ -46,7 +46,6 @@ exports.createPages = ({ actions, graphql }) => {
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
-  fmImagesToRelative(node);
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode });
     createNodeField({
@@ -68,4 +67,18 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
   `;
   createTypes(typeDefs);
+};
+
+// returns date in YYYY-MM-DD format
+const getCurrentDate = () => {
+  const d = new Date();
+  let month = (d.getMonth() + 1).toString();
+  if (month.length < 2) {
+    month = `0${month}`;
+  }
+  let day = d.getDate().toString();
+  if (day.length < 2) {
+    day = `0${day}`;
+  }
+  return `${d.getFullYear()}-${month}-${day}`;
 };

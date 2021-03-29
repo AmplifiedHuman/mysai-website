@@ -69,7 +69,7 @@ const EventPage = ({ data }) => {
         mb="4"
       >
         <Box w="full" maxW="650px">
-          <GatsbyImage image={featuredImage} alt="MYSAI Photo" />
+          <GatsbyImage image={featuredImage} alt={frontmatter.title}/>
         </Box>
         <VStack justifyContent="start">
           <VStack

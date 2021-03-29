@@ -1,10 +1,10 @@
 ---
 templateKey: event-template
-title: MYSAI Sample Event Test
+title: MYSAI Annual General Meeting 2021
 description: This is a sample text about the event.
 created_date: 2021-03-21T10:54
-event_start: 2021-03-28T08:02
-event_end: 2021-03-28T10:01
+event_start: 2021-05-28T08:02
+event_end: 2021-05-28T10:01
 featured_image: '/img/mysai_cover.jpg'
 location: 31 Leeson Park, Ranelagh, Dublin, D06 E8H1, Ireland
 event_link: ''
@@ -43,4 +43,4 @@ It is a long established fact that a reader will be distracted by the readable c
 2. McHale
 3. Parish
 
-Fuck My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
+My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
