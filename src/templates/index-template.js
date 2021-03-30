@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
@@ -21,7 +21,6 @@ const IndexPage = ({ data }) => {
       <Intro info={info} />
       <UpcomingEvents upcomingEvents={upcomingEvents}/>
       <NewBlogPosts />
-      <Link to="/page-2/">Go to page 2</Link> <br />
     </Layout>
   );
 };

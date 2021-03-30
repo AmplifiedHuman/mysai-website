@@ -4,7 +4,7 @@ import BlogCard from '../BlogCard';
 
 const NewBlogPosts = () => {
   return (
-    <Stack mt="50">
+    <Stack mt="50" mb="15">
       <Heading mb={10}>Blog Posts</Heading>
       <Center>
         <Stack

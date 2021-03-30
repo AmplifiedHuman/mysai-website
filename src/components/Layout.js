@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Container, Flex, Spacer, Box } from '@chakra-ui/react';
+import { Container, Flex, Spacer } from '@chakra-ui/react';
 
 import NavBar from '../components/Navbar';
+import Footer from './Footer';
 
 const Layout = ({ children }) => {
   return (
@@ -12,9 +13,7 @@ const Layout = ({ children }) => {
         {children}
       </Container>
       <Spacer />
-      <Box>
-        <footer>Sample Footer</footer>
-      </Box>
+      <Footer />
     </Flex>
   );
 };
