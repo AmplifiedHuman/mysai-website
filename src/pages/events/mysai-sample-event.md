@@ -3,8 +3,8 @@ templateKey: event-template
 title: MYSAI Sample Event Test
 description: This is a sample text about the event.
 created_date: 2021-03-21T10:54
-event_start: 2021-03-30T08:02
-event_end: 2021-03-30T10:01
+event_start: 2021-04-30T08:02
+event_end: 2021-04-30T10:01
 featured_image: '/img/mysai_cover.jpg'
 location: 31 Leeson Park, Ranelagh, Dublin, D06 E8H1, Ireland
 event_link: ''
