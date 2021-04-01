@@ -4,26 +4,36 @@ import { Flex, ButtonGroup, Spacer, Box, Button } from '@chakra-ui/react';
 import Logo from './Logo';
 import Toggle from './Toggle';
 import NavigationDrawer from './Drawer';
+import { Link } from 'gatsby';
 
 const NavBar = () => {
   const colorOptions = { variant: 'ghost', scheme: 'gray' };
   const iconOptions = { size: '30px', scheme: 'blue', variant: 'ghost' };
-  const routes = ['Home', 'About Us', 'Events', 'Join Us'];
+  const routes = [
+    { name: 'Home', link: '/' },
+    { name: 'About Us', link: '/about' },
+    { name: 'Events', link: '/events' },
+    { name: 'Join Us', link: '/join' },
+  ];
   let buttons = (
     <>
       {routes.map(route => {
         return (
           <Button
-            key={route}
+            key={route.name}
             variant={colorOptions.variant}
             colorScheme={colorOptions.scheme}
             size="md"
+            as={Link}
+            to={route.link}
           >
-            {route}
+            {route.name}
           </Button>
         );
       })}
-      <Button variant='outline' colorScheme='blue' size='md'>Contact</Button>
+      <Button variant="outline" colorScheme="blue" size="md">
+        Contact
+      </Button>
       <Toggle icon={iconOptions} />
     </>
   );
