@@ -12,7 +12,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import Layout from '../components/Layout';
 import MarkdownContent from '../components/MarkdownContent';
-import SEO from '../components/SEO';
+import Seo from '../components/SEO';
 import '@fontsource/merriweather';
 import moment from 'moment';
 import { ImLocation } from '@react-icons/all-files/im/ImLocation';
@@ -59,7 +59,7 @@ const EventPage = ({ data }) => {
   }
   return (
     <Layout>
-      <SEO title={frontmatter.title} />
+      <Seo title={frontmatter.title} />
       <Stack
         alignItems="center"
         direction={['column', 'column', 'column', 'row', 'row']}
@@ -69,7 +69,7 @@ const EventPage = ({ data }) => {
         mb="4"
       >
         <Box w="full" maxW="650px">
-          <GatsbyImage image={featuredImage} alt={frontmatter.title}/>
+          <GatsbyImage image={featuredImage} alt={frontmatter.title} />
         </Box>
         <VStack justifyContent="start">
           <VStack

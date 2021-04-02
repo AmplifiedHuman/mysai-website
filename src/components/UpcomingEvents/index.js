@@ -23,6 +23,9 @@ const UpcomingEvents = ({ upcomingEvents }) => {
                 <EventCard
                   title={frontmatter.title}
                   eventStart={frontmatter.event_start}
+                  eventEnd={frontmatter.event_end}
+                  eventLink={frontmatter.event_link}
+                  location={frontmatter.location}
                   image={getImage(frontmatter.featured_image)}
                   link={slug}
                   key={frontmatter.title}

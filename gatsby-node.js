@@ -5,7 +5,7 @@ exports.createPages = ({ actions, graphql }) => {
 
   return graphql(`
     {
-      allMarkdownRemark(limit: 1000) {
+      all_posts: allMarkdownRemark(limit: 1000) {
         edges {
           node {
             id
@@ -18,6 +18,15 @@ exports.createPages = ({ actions, graphql }) => {
           }
         }
       }
+      events: allMarkdownRemark(
+        filter: { frontmatter: { templateKey: { eq: "event-template" } } }
+      ) {
+        edges {
+          node {
+            id
+          }
+        }
+      }
     }
   `).then(result => {
     if (result.errors) {
@@ -25,7 +34,7 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors);
     }
 
-    const posts = result.data.allMarkdownRemark.edges;
+    const posts = result.data.all_posts.edges;
 
     posts.forEach(edge => {
       const id = edge.node.id;
@@ -38,6 +47,22 @@ exports.createPages = ({ actions, graphql }) => {
         context: {
           id,
           currentDate: getCurrentDate(),
+        },
+      });
+    });
+
+    const events = result.data.events.edges;
+    const postsPerPage = 9;
+    const numPages = Math.ceil(events.length / postsPerPage);
+    Array.from({ length: numPages }).forEach((_, i) => {
+      createPage({
+        path: i === 0 ? `/events/` : `/events/${i + 1}`,
+        component: path.resolve('./src/templates/event-list-template.js'),
+        context: {
+          limit: postsPerPage,
+          skip: i * postsPerPage,
+          numPages,
+          currentPage: i + 1,
         },
       });
     });

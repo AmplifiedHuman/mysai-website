@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
-import SEO from '../components/SEO';
+import Seo from '../components/SEO';
 import Hero from '../components/Hero';
 import Intro from '../components/Intro';
 import { getImage } from 'gatsby-plugin-image';
@@ -16,10 +16,10 @@ const IndexPage = ({ data }) => {
   const upcomingEvents = data.upcoming_events.edges;
   return (
     <Layout>
-      <SEO title="Home" />
+      <Seo title="Home" />
       <Hero description={frontmatter.description} frontImage={image} />
       <Intro info={info} />
-      <UpcomingEvents upcomingEvents={upcomingEvents}/>
+      <UpcomingEvents upcomingEvents={upcomingEvents} />
       <NewBlogPosts />
     </Layout>
   );
@@ -35,6 +35,7 @@ export const data = graphql`
         }
       }
       sort: { fields: [frontmatter___event_start], order: ASC }
+      limit: 3
     ) {
       edges {
         node {
@@ -44,6 +45,9 @@ export const data = graphql`
           frontmatter {
             title
             event_start(formatString: "Do MMM YYYY h:mma")
+            event_end(formatString: "Do MMM YYYY h:mma")
+            location
+            event_link
             featured_image {
               childImageSharp {
                 gatsbyImageData(
