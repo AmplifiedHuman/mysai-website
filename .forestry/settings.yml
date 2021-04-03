@@ -16,7 +16,7 @@ sections:
 - type: directory
   path: src/pages
   label: About
-  create: documents
+  create: none
   match: about.md
   templates:
   - about
