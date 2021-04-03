@@ -8,18 +8,18 @@ sections:
   label: Site Info
 - type: directory
   path: src/pages
-  label: About
-  create: documents
-  match: about.md
-  templates:
-  - about
-- type: directory
-  path: src/pages
   label: Content
   create: none
   match: index.md
   templates:
   - home-page
+- type: directory
+  path: src/pages
+  label: About
+  create: documents
+  match: about.md
+  templates:
+  - about
 - type: directory
   path: src/pages/events
   label: Events
