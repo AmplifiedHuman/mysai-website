@@ -4,13 +4,15 @@ auto_deploy: false
 admin_path: "/static/admin"
 webhook_url: 
 sections:
+- type: heading
+  label: Site Info
 - type: directory
-  path: src/pages/events
-  label: Events
+  path: src/pages
+  label: About
   create: documents
-  match: "**/*.md"
+  match: about.md
   templates:
-  - event
+  - about
 - type: directory
   path: src/pages
   label: Content
@@ -18,6 +20,13 @@ sections:
   match: index.md
   templates:
   - home-page
+- type: directory
+  path: src/pages/events
+  label: Events
+  create: documents
+  match: "**/*.md"
+  templates:
+  - event
 upload_dir: static/img
 public_path: "/img"
 front_matter_path: ''
