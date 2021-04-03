@@ -1,4 +1,104 @@
 ---
 label: About
 hide_body: false
-fields: []
+fields:
+- name: templateKey
+  type: text
+  config:
+    required: true
+  label: templateKey
+  hidden: true
+  default: about-template
+- name: committee_year
+  type: number
+  description: Current year
+  default: 2021
+  required: true
+  config:
+    min: 2021
+    max: 
+    step: 1
+    required: true
+  label: Committee Year
+- name: committee_list
+  type: field_group_list
+  fields:
+  - name: team_member
+    type: field_group
+    config: {}
+    fields:
+    - name: member_photo
+      type: file
+      config:
+        maxSize: 2
+      label: Member Photo
+      description: Member Photo
+    - name: member_name
+      type: text
+      config:
+        required: true
+        min: 
+      label: Member Name
+      description: Member Name
+    - name: member_school
+      type: text
+      config:
+        required: true
+      label: Member School
+      description: 'Provide full name of university. For example: Trinity College
+        Dublin'
+    - name: member_course
+      type: text
+      config:
+        required: true
+      label: Member Course
+      description: 'Enter course and year (For example: 2nd Year in Mechanical Engineering)'
+      default: 2nd Year in Mechanical Engineering
+    - name: member_position
+      type: text
+      config:
+        required: true
+      label: Member Position
+      description: Position held by member
+    label: Team Member
+    description: Team member
+  config:
+    min: 1
+    max: 
+    labelField: 
+  label: Committee List
+  description: List of committee members
+- name: student_ambassadors
+  type: field_group_list
+  fields:
+  - name: ambassador
+    type: field_group
+    config: {}
+    fields:
+    - name: ambassador_name
+      type: text
+      config:
+        required: true
+      label: Ambassador Name
+      description: SA Name
+    - name: ambassador_school
+      type: text
+      config:
+        required: true
+      label: Ambassador School
+      description: SA School
+    - name: ambassador_course
+      type: text
+      config:
+        required: true
+      label: Ambassador Course
+      description: 'SA course and year (For example: 2nd Year in Mechanical Engineering)'
+      default: 2nd Year in Mechanical Engineering
+    label: Ambassador
+    description: Student Ambassador
+  config:
+    min: 1
+    max: 
+    labelField: 
+  label: Student ambassadors
+  description: Student Ambassadors List
