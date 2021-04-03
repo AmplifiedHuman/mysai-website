@@ -21,7 +21,7 @@ import { useColorModeValue } from '@chakra-ui/color-mode';
 import Icon from '@chakra-ui/icon';
 import { Button } from '@chakra-ui/button';
 
-const randomColor = title => {
+const randomColor = id => {
   const colors = [
     'twitter.500',
     'red.500',
@@ -32,14 +32,14 @@ const randomColor = title => {
     'pink.500',
     'gray.500',
   ];
+  console.log(id);
   const max = colors.length;
   let hash = 0;
-  for (let i = 0; i < title.length; i++) {
-    const char = title.charCodeAt(i);
-    hash = (hash << 5) - hash + char;
-    hash = hash & hash;
+  for (let i = 0; i < id.length; ++i) {
+    hash = (Math.imul(31, hash) + id.charCodeAt(i)) | 0;
   }
-  return colors[hash % max];
+  console.log(colors[Math.abs(hash) % max]);
+  return colors[Math.abs(hash) % max];
 };
 
 const EventPage = ({ data }) => {
@@ -65,7 +65,13 @@ const EventPage = ({ data }) => {
         direction={['column', 'column', 'column', 'row', 'row']}
         spacing={['5', '5', '5', '10', '10']}
         border={['0', '0', '0', '2px', '2px']}
-        borderColor={randomColor(frontmatter.title)}
+        borderColor={[
+          '0',
+          '0',
+          '0',
+          randomColor(markdownRemark.id),
+          randomColor(markdownRemark.id),
+        ]}
         mb="4"
       >
         <Box w="full" maxW="650px">

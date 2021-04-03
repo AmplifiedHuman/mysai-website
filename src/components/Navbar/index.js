@@ -31,7 +31,13 @@ const NavBar = () => {
           </Button>
         );
       })}
-      <Button variant="outline" colorScheme="blue" size="md">
+      <Button
+        variant="outline"
+        colorScheme="blue"
+        size="md"
+        as={Link}
+        to="/contact"
+      >
         Contact
       </Button>
       <Toggle icon={iconOptions} />
