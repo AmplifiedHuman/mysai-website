@@ -83,25 +83,32 @@ const EventPage = ({ data }) => {
             alignItems={['start', 'center', 'center', 'start', 'start']}
             color={useColorModeValue('gray.700', 'gray.300')}
           >
-            <Heading fontFamily="merriweather" size="xl">
+            <Heading
+              fontFamily="merriweather"
+              size="lg"
+              textAlign={['center', 'center', 'left', 'left', 'left']}
+            >
               {frontmatter.title}
             </Heading>
             {isSameDay ? (
-              <Heading size="md" textAlign="left">
+              <Heading size="sm" fontWeight="500">
                 {shortenedDuration}
               </Heading>
             ) : (
-              <VStack spacing="3" alignItems="start">
-                <Heading size="sm" textAlign="left" as="h3">
+              <VStack
+                spacing="3"
+                alignItems={['start', 'center', 'center', 'start', 'start']}
+              >
+                <Heading size="sm" as="h3" textAlign="center">
                   FROM
                 </Heading>
-                <Heading size="md" textAlign="left" as="h3">
+                <Heading size="sm" textAlign="left" as="h3" fontWeight="500">
                   {eventStartDate.format('Do MMM YYYY h:mma')}
                 </Heading>
                 <Heading size="sm" textAlign="left" as="h3">
                   TO
                 </Heading>
-                <Heading size="md" textAlign="left" as="h3">
+                <Heading size="sm" textAlign="left" as="h3" fontWeight="500">
                   {eventEndDate.format('Do MMM YYYY h:mma')}
                 </Heading>
               </VStack>

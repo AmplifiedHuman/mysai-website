@@ -52,10 +52,13 @@ const ContactCard = () => {
     <Flex justify={'center'}>
       <Stack spacing={8} mx={'auto'} maxW={'xl'} py={14} flexGrow="1">
         <Stack align={'center'}>
-          <Heading size="xl">Feel free to reach out</Heading>
+          <Heading size="xl" textAlign="center">
+            Feel free to reach out
+          </Heading>
           <Text
             fontSize={'lg'}
             color={useColorModeValue('gray.600', 'gray.300')}
+            textAlign="center"
           >
             We are happy to answer any queries{' '}
             <span role="img" aria-label="smiley face">
@@ -63,12 +66,7 @@ const ContactCard = () => {
             </span>
           </Text>
         </Stack>
-        <Box
-          rounded={'lg'}
-          bg={useColorModeValue('white', 'gray.700')}
-          px="8"
-          py="8"
-        >
+        <Box rounded={'lg'} px="8" py="6">
           {formStatus === 'NEW' ? (
             <Stack spacing={4} as="form" onSubmit={handleSubmit(onSubmit)}>
               <FormControl id="name" isRequired>
@@ -136,7 +134,7 @@ const ContactCard = () => {
               <Heading size="lg" textAlign="center">
                 Ahh! something went wrong
               </Heading>
-              <Text color="gray.500" mt="4">
+              <Text color="gray.500" mt="4" textAlign="center">
                 Try to refresh the page or try again later. If issue persists,
                 please send an email to{' '}
                 <Link color="blue.500" href="mailto:websitemysai@gmail.com">
@@ -277,9 +275,6 @@ const Contact = () => (
   <Layout>
     <Seo title="Contact" />
     <ContactCard />
-    <Heading size="xl" textAlign="center" mb="35">
-      Additional Contacts
-    </Heading>
     <AdditionalContacts />
   </Layout>
 );
