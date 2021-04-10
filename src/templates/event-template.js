@@ -32,13 +32,11 @@ const randomColor = id => {
     'pink.500',
     'gray.500',
   ];
-  console.log(id);
   const max = colors.length;
   let hash = 0;
   for (let i = 0; i < id.length; ++i) {
     hash = (Math.imul(31, hash) + id.charCodeAt(i)) | 0;
   }
-  console.log(colors[Math.abs(hash) % max]);
   return colors[Math.abs(hash) % max];
 };
 
