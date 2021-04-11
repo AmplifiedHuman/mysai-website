@@ -38,15 +38,6 @@ committee_list:
       member_name: Erin Pung3
       member_school: Technological University Dublin
       member_position: Director of Project and Events Department, National Treasurer
-student_ambassadors:
-  - ambassador:
-      ambassador_course: 2nd year Mechanical Engineering student
-      ambassador_name: Ryan Yaw 2
-      ambassador_school: SA School
-  - ambassador:
-      ambassador_course: 3rd year student in Music
-      ambassador_name: Ryan Yaw
-      ambassador_school: University College Dublin
 ---
 
 The Malaysia Student Association of Ireland (MYSAI) a national student organisation based in Ireland set up to provide welfare for the Malaysian student community. We are a diverse yet united team of passionate and driven Malaysian students coming from 14 different institutions/universities all over Ireland with various academic backgrounds.
