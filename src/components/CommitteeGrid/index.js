@@ -100,25 +100,15 @@ const CommitteeGrid = ({ committees }) => {
       direction={'column'}
       width={'full'}
     >
-      <Box width={{ base: 'full', sm: 'lg', lg: 'xl' }} margin={'auto'}>
-        <chakra.h3
-          fontWeight={'bold'}
-          fontSize={20}
-          textTransform={'uppercase'}
-          color={useColorModeValue('facebook.400', 'twitter.200')}
-        >
-          About Us
-        </chakra.h3>
-        <chakra.h1
-          py={5}
-          fontSize={48}
-          fontWeight={'bold'}
-          color={useColorModeValue('gray.700', 'gray.50')}
-          wordBreak="normal"
-        >
-          Meet Our Committee
-        </chakra.h1>
-      </Box>
+      <Heading
+        my={10}
+        size="2xl"
+        color={useColorModeValue('gray.700', 'gray.50')}
+        wordBreak="normal"
+        textAlign='center'
+      >
+        Meet Our Committee
+      </Heading>
       <SimpleGrid
         minChildWidth="300px"
         spacing={'10'}

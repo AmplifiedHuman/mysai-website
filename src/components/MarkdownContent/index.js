@@ -83,12 +83,21 @@ const renderAst = new RehypeReact({
   },
 }).Compiler;
 
-const MarkdownContent = ({ html }) => {
+const MarkdownContent = ({ html, type }) => {
+  let px = ['0', '0', '0', '100px', '200px'];
+  let textAlign = 'left';
+
+  if (type === 'about') {
+    px = ['0', '0', '0', '100px', '100px'];
+    textAlign = 'center';
+  }
+
   return (
     <Box
       fontFamily="merriweather"
-      px={['0', '0', '0', '100px', '200px']}
+      px={px}
       lineHeight="35px"
+      textAlign={textAlign}
     >
       {renderAst(html)}
     </Box>
