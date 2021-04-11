@@ -68,39 +68,45 @@ fields:
     labelField: 
   label: Committee List
   description: List of committee members
-- name: student_ambassadors
+- name: department
   type: field_group_list
   fields:
-  - name: ambassador
+  - name: department_name
+    type: text
+    config:
+      required: true
+    label: Department Name
+    description: Department Name (includes SAs)
+  - name: department_members
     type: field_group
     config: {}
     fields:
-    - name: ambassador_name
+    - name: member_name
       type: text
       config:
         required: true
-      label: Ambassador Name
-      description: SA Name
-    - name: ambassador_school
+      label: Member Name
+      description: Member Name
+    - name: member_school
       type: text
       config:
         required: true
-      label: Ambassador School
-      description: SA School
-    - name: ambassador_course
+      label: Member School
+      description: Member School
+    - name: member_course
       type: text
       config:
         required: true
-      label: Ambassador Course
-      description: 'SA course and year (For example: 2nd Year in Mechanical Engineering)'
+      label: Member Course
+      description: 'Member course and year (For example: 2nd Year in Mechanical Engineering)'
       default: 2nd Year in Mechanical Engineering
-    label: Ambassador
-    description: Student Ambassador
+    description: Members
+    label: Department Members
   config:
     min: 1
     max: 
     labelField: 
-  label: Student ambassadors
-  description: Student Ambassadors List
+  label: Department
+  description: Department List
 pages:
 - src/pages/about.md
