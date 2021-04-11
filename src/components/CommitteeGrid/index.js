@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   Box,
-  chakra,
   Container,
   Flex,
   Heading,

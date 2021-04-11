@@ -7,6 +7,7 @@ import CommitteeGrid from '../components/CommitteeGrid';
 import { useColorModeValue } from '@chakra-ui/system';
 import MarkdownContent from '../components/MarkdownContent';
 import { Heading } from '@chakra-ui/layout';
+import CommitteeList from '../components/CommitteeList';
 
 const AboutPage = ({ data }) => {
   const { markdownRemark } = data;
@@ -23,6 +24,7 @@ const AboutPage = ({ data }) => {
       </Heading>
       <MarkdownContent html={markdownRemark.htmlAst} type="about" />
       <CommitteeGrid committees={frontmatter.committee_list} />
+      <CommitteeList departments={frontmatter.department} />
     </Layout>
   );
 };
@@ -46,11 +48,12 @@ export const data = graphql`
             member_school
           }
         }
-        student_ambassadors {
-          ambassador {
-            ambassador_course
-            ambassador_name
-            ambassador_school
+        department {
+          department_name
+          team_member {
+            member_course
+            member_name
+            member_school
           }
         }
       }
