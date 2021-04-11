@@ -77,9 +77,8 @@ fields:
       required: true
     label: Department Name
     description: Department Name (includes SAs)
-  - name: department_members
-    type: field_group
-    config: {}
+  - name: team_member
+    type: field_group_list
     fields:
     - name: member_name
       type: text
@@ -87,21 +86,24 @@ fields:
         required: true
       label: Member Name
       description: Member Name
-    - name: member_school
-      type: text
-      config:
-        required: true
-      label: Member School
-      description: Member School
     - name: member_course
       type: text
       config:
         required: true
       label: Member Course
-      description: 'Member course and year (For example: 2nd Year in Mechanical Engineering)'
-      default: 2nd Year in Mechanical Engineering
-    description: Members
-    label: Department Members
+      description: 'Member Course (example: 2nd year BSc Biology)'
+    - name: member_school
+      type: text
+      config:
+        required: true
+      label: Member School
+      description: 'Member School Full Name (example: University College Cork)'
+    config:
+      min: 1
+      max: 
+      labelField: 
+    label: Team Member
+    description: Team Members
   config:
     min: 1
     max: 
