@@ -51,3 +51,5 @@ fields:
   description: DO NOT MODIFY
   hidden: true
   default: join-template
+pages:
+- src/pages/join.md
