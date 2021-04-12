@@ -14,7 +14,7 @@ fields:
   - name: application_url
     type: text
     config:
-      required: true
+      required: false
     label: Application Url
     description: Associate Application URL, must not be empty, use toggle to hide
       applications
@@ -35,7 +35,7 @@ fields:
   - name: application_url
     type: text
     config:
-      required: true
+      required: false
     label: Application Url
     description: SA Application URL, must not be empty, use toggle to hide applications
     showOnly:
