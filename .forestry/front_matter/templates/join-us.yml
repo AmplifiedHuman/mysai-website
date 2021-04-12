@@ -35,7 +35,7 @@ fields:
   - name: application_url
     type: text
     config:
-      required: false
+      required: true
     label: Application Url
     description: SA Application URL, must not be empty, use toggle to hide applications
     showOnly:
