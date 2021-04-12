@@ -60,6 +60,8 @@ export default function EventCard({
           fontWeight={800}
           fontSize={'sm'}
           letterSpacing={1.1}
+          bgGradient="linear(to-r, red.400,pink.400)"
+          bgClip='text'
         >
           Event
         </Text>

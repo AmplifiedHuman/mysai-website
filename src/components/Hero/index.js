@@ -3,6 +3,7 @@ import { useColorModeValue } from '@chakra-ui/color-mode';
 import { Stack } from '@chakra-ui/layout';
 import { Text } from '@chakra-ui/layout';
 import { Box } from '@chakra-ui/layout';
+import { Link } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import React from 'react';
 
@@ -45,7 +46,8 @@ const Hero = props => {
                 </Text>
                 <Text
                   display={{ base: 'block', xl: 'inline' }}
-                  color={useColorModeValue('blue.400', 'blue.600')}
+                  bgGradient="linear(to-r, red.400,pink.400)"
+                  bgClip="text"
                 >
                   Ireland
                 </Text>
@@ -66,10 +68,30 @@ const Hero = props => {
                 mt={{ base: 5, sm: 8 }}
                 fontWeight="extrabold"
               >
-                <Button colorScheme="blue" variant="solid">
+                <Button
+                  bgGradient="linear(to-r, red.400,pink.400)"
+                  variant="solid"
+                  size="lg"
+                  color={'white'}
+                  _hover={{
+                    bgGradient: 'linear(to-r, red.400,pink.400)',
+                    boxShadow: 'xl',
+                  }}
+                  as={Link}
+                  to="/events"
+                >
                   Our Events
                 </Button>
-                <Button colorScheme="blue" variant="outline">
+                <Button
+                  colorScheme="pink"
+                  variant="outline"
+                  size="lg"
+                  _hover={{
+                    boxShadow: 'xl',
+                  }}
+                  as={Link}
+                  to="/about"
+                >
                   About Us
                 </Button>
               </Stack>

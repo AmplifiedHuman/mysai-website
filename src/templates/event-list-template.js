@@ -46,14 +46,18 @@ const Banner = () => {
                 position: 'absolute',
                 bottom: 1,
                 left: 0,
-                bg: 'red.400',
+                bgGradient: 'linear(to-r, red.400,pink.400)',
                 zIndex: -1,
               }}
             >
               Connect Through
             </Text>
             <br />
-            <Text as={'span'} color={'red.400'}>
+            <Text
+              as={'span'}
+              bgGradient="linear(to-r, red.400,pink.400)"
+              bgClip="text"
+            >
               Awesome Events!
             </Text>
           </Heading>
@@ -79,7 +83,7 @@ const Banner = () => {
             top={'-20%'}
             left={0}
             zIndex={-1}
-            color={useColorModeValue('red.100', 'red.400')}
+            color={useColorModeValue('pink.100', 'pink.300')}
           />
           <Box
             position={'relative'}
@@ -181,7 +185,8 @@ const EventsPage = ({ data, pageContext }) => {
         <Button
           as={Link}
           to={`/events/${currentPage === 1 ? '' : currentPage}`}
-          colorScheme="red"
+          bgGradient="linear(to-r, red.400,pink.400)"
+          color="white"
         >
           {currentPage}
         </Button>

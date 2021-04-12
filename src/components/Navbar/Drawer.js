@@ -42,7 +42,8 @@ const NavigationDrawer = props => {
           <DrawerContent>
             <DrawerCloseButton />
             <DrawerHeader
-              bg="blue.500"
+              bgGradient="linear(to-r, red.400,pink.400)"
+              color={'white'}
               display="flex"
               justifyContent="center"
             >
@@ -62,9 +63,7 @@ const NavigationDrawer = props => {
               </Stack>
             </DrawerBody>
 
-            <DrawerFooter>
-              {/* TODO:Add social links */}
-            </DrawerFooter>
+            <DrawerFooter>{/* TODO:Add social links */}</DrawerFooter>
           </DrawerContent>
         </DrawerOverlay>
       </Drawer>

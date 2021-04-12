@@ -4,7 +4,6 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Seo from '../components/SEO';
 import CommitteeGrid from '../components/CommitteeGrid';
-import { useColorModeValue } from '@chakra-ui/system';
 import MarkdownContent from '../components/MarkdownContent';
 import { Heading } from '@chakra-ui/layout';
 import CommitteeList from '../components/CommitteeList';
@@ -16,8 +15,7 @@ const AboutPage = ({ data }) => {
     <Layout>
       <Seo title="About" />
       <Heading
-        size="xl"
-        color={useColorModeValue('facebook.400', 'twitter.200')}
+        size="2xl"
         textAlign="center"
       >
         About Us

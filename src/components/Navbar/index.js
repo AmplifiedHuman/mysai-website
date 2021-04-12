@@ -8,7 +8,7 @@ import { Link } from 'gatsby';
 
 const NavBar = () => {
   const colorOptions = { variant: 'ghost', scheme: 'gray' };
-  const iconOptions = { size: '30px', scheme: 'blue', variant: 'ghost' };
+  const iconOptions = { size: '30px', scheme: 'gray', variant: 'ghost' };
   const routes = [
     { name: 'Home', link: '/' },
     { name: 'About Us', link: '/about' },
@@ -32,8 +32,7 @@ const NavBar = () => {
         );
       })}
       <Button
-        variant="outline"
-        colorScheme="blue"
+        colorScheme={colorOptions.scheme}
         size="md"
         as={Link}
         to="/contact"
@@ -45,7 +44,7 @@ const NavBar = () => {
   );
 
   return (
-    <Flex alignItems="center" boxShadow="md">
+    <Flex alignItems="center" >
       <Logo />
       <Spacer />
       <ButtonGroup

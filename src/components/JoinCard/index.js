@@ -10,8 +10,7 @@ import {
   SimpleGrid,
   Avatar,
   AvatarGroup,
-  useBreakpointValue,
-  Icon,
+  useColorModeValue,
 } from '@chakra-ui/react';
 
 const avatars = [
@@ -40,7 +39,7 @@ export default function JoinCard() {
             Associates{' '}
             <Text
               as={'span'}
-              bgGradient="linear(to-r, red.400,pink.400)"
+              bgGradient="linear(to-bl, #3370ff,#5C8DFF)"
               bgClip="text"
             >
               &
@@ -68,7 +67,7 @@ export default function JoinCard() {
                     height: 'full',
                     rounded: 'full',
                     transform: 'scale(1.125)',
-                    bgGradient: 'linear(to-bl, red.400,pink.400)',
+                    bgGradient: 'linear(to-l, #3370ff,#5C8DFF)',
                     position: 'absolute',
                     zIndex: -1,
                     top: 0,
@@ -126,7 +125,7 @@ export default function JoinCard() {
               Join our team
               <Text
                 as={'span'}
-                bgGradient="linear(to-r, red.400,pink.400)"
+                bgGradient="linear(to-bl, #3370ff, #5C8DFF)"
                 bgClip="text"
               >
                 !
@@ -141,10 +140,10 @@ export default function JoinCard() {
             fontFamily={'heading'}
             mt={8}
             w={'full'}
-            bgGradient="linear(to-r, red.400,pink.400)"
-            color={'white'}
+            color="white"
+            bgColor={useColorModeValue('#3370ff', '#5C8DFF')}
             _hover={{
-              bgGradient: 'linear(to-r, red.400,pink.400)',
+              backgroundColor: '#709BFF',
               boxShadow: 'xl',
             }}
           >
@@ -152,34 +151,6 @@ export default function JoinCard() {
           </Button>
         </Stack>
       </Container>
-      <Blur
-        position={'absolute'}
-        top={150}
-        left={-10}
-        style={{ filter: 'blur(110px)' }}
-      />
     </Box>
   );
 }
-
-export const Blur = props => {
-  return (
-    <Icon
-      width={useBreakpointValue({ base: '100%', md: '30vw', lg: '30vw' })}
-      zIndex={useBreakpointValue({ base: -1, md: -1, lg: -3 })}
-      height="480px"
-      viewBox="0 0 528 560"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
-      <circle cx="71" cy="61" r="111" fill="#F56565" />
-      <circle cx="244" cy="106" r="139" fill="#ED64A6" />
-      <circle cy="291" r="139" fill="#ED64A6" />
-      <circle cx="80.5" cy="189.5" r="101.5" fill="#ED8936" />
-      <circle cx="196.5" cy="317.5" r="101.5" fill="#ECC94B" />
-      <circle cx="70.5" cy="458.5" r="101.5" fill="#48BB78" />
-      <circle cx="426.5" cy="-0.5" r="101.5" fill="#4299E1" />
-    </Icon>
-  );
-};
