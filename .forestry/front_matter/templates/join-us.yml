@@ -1,4 +1,39 @@
 ---
 label: Join Us
 hide_body: false
-fields: []
+fields:
+- name: associate_application
+  type: field_group
+  config: {}
+  fields:
+  - name: is_open
+    type: boolean
+    label: Is Open
+    description: Turn on if applications are currently open
+    default: true
+  - name: application_url
+    type: text
+    config:
+      required: true
+    label: Application Url
+    description: Associate Application URL, must not be empty, use toggle to hide
+      applications
+  label: Associate Application
+  description: Associate Application
+- name: ambassador_application
+  type: field_group
+  config: {}
+  fields:
+  - name: is_open
+    type: boolean
+    label: Is Open
+    description: Enable if applications for SAs are open
+    default: true
+  - name: application_url
+    type: text
+    config:
+      required: false
+    label: Application Url
+    description: SA Application URL, must not be empty, use toggle to hide applications
+  label: Ambassador Application
+  description: Student Ambassador Application
