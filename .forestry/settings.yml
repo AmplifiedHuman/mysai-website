@@ -8,7 +8,7 @@ sections:
   label: Site Info
 - type: directory
   path: src/pages
-  label: Content
+  label: Home Page
   create: none
   match: index.md
   templates:
@@ -20,6 +20,15 @@ sections:
   match: about.md
   templates:
   - about
+- type: directory
+  path: src/pages
+  label: Join
+  create: documents
+  match: join.md
+  templates:
+  - join-us
+- type: heading
+  label: Blogs & Events
 - type: directory
   path: src/pages/events
   label: Events
