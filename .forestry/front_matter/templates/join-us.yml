@@ -18,6 +18,9 @@ fields:
     label: Application Url
     description: Associate Application URL, must not be empty, use toggle to hide
       applications
+    showOnly:
+      field: is_open
+      value: true
   label: Associate Application
   description: Associate Application
 - name: ambassador_application
@@ -35,5 +38,16 @@ fields:
       required: false
     label: Application Url
     description: SA Application URL, must not be empty, use toggle to hide applications
+    showOnly:
+      field: is_open
+      value: true
   label: Ambassador Application
   description: Student Ambassador Application
+- name: templateKey
+  type: text
+  config:
+    required: true
+  label: templateKey
+  description: DO NOT MODIFY
+  hidden: true
+  default: join-template
