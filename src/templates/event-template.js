@@ -79,7 +79,7 @@ const EventPage = ({ data }) => {
           <VStack
             spacing="5"
             alignItems={['start', 'center', 'center', 'start', 'start']}
-            color={useColorModeValue('gray.700', 'gray.300')}
+            color={useColorModeValue('gray.700', 'white')}
           >
             <Heading
               fontFamily="merriweather"

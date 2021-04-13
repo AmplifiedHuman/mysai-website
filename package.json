@@ -9,7 +9,7 @@
     "@chakra-ui/gatsby-plugin": "^1.0.2",
     "@chakra-ui/react": "^1.5.0",
     "@emotion/react": "^11.1.5",
-    "@emotion/styled": "^11.1.5",
+    "@emotion/styled": "^11.3.0",
     "@fontsource/merriweather": "^4.2.2",
     "@react-icons/all-files": "^4.1.0",
     "calendar-link": "^2.0.16",
