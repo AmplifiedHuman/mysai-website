@@ -10,7 +10,10 @@ import {
   SimpleGrid,
   Avatar,
   AvatarGroup,
-  useColorModeValue,
+  HStack,
+  Alert,
+  AlertIcon,
+  Link,
 } from '@chakra-ui/react';
 
 const avatars = [
@@ -19,7 +22,18 @@ const avatars = [
   },
 ];
 
-export default function JoinCard() {
+export default function JoinCard({
+  associateApplication,
+  ambassadorApplication,
+}) {
+  let message = 'Applications are currently closed for';
+  if (!associateApplication.is_open && !ambassadorApplication.is_open) {
+    message += ' associates and student ambassadors';
+  } else if (!associateApplication.is_open) {
+    message += ' associates';
+  } else if (!ambassadorApplication.is_open) {
+    message += ' student ambassadors';
+  }
   return (
     <Box position={'relative'}>
       <Container
@@ -35,6 +49,7 @@ export default function JoinCard() {
             lineHeight={1.1}
             fontSize={{ base: '3xl', sm: '4xl', md: '5xl', lg: '6xl' }}
             zIndex={2}
+            textAlign={{ base: 'center', md: 'left' }}
           >
             Associates{' '}
             <Text
@@ -111,9 +126,8 @@ export default function JoinCard() {
         <Stack
           bg={'white'}
           rounded={'xl'}
-          p={{ base: 4, sm: 6, md: 8 }}
+          p={{ base: 6, sm: 6, md: 8 }}
           spacing={{ base: 8 }}
-          alignItems="center"
           maxW={{ lg: 'lg' }}
         >
           <Stack spacing={4} justifyContent="center">
@@ -121,6 +135,7 @@ export default function JoinCard() {
               color={'gray.800'}
               lineHeight={1.1}
               fontSize={{ base: '2xl', sm: '3xl', md: '4xl' }}
+              textAlign={{ base: 'center', md: 'left' }}
             >
               Join our team
               <Text
@@ -131,24 +146,60 @@ export default function JoinCard() {
                 !
               </Text>
             </Heading>
-            <Text color={'gray.500'} fontSize={{ base: 'sm', sm: 'md' }}>
-              We’re looking for amazing associates just like you! Become a part
-              of our team and skyrocket your career!
+            <Text
+              color={'gray.500'}
+              fontSize={{ base: 'sm', sm: 'md' }}
+              textAlign={{ base: 'center', md: 'left' }}
+            >
+              We’re looking for amazing associates and student ambassadors!
+              Become a part of our team and skyrocket your career! Please click
+              on the links below to apply.
             </Text>
           </Stack>
-          <Button
-            fontFamily={'heading'}
-            mt={8}
-            w={'full'}
-            color="white"
-            bgColor={useColorModeValue('#3370ff', '#5C8DFF')}
-            _hover={{
-              backgroundColor: '#709BFF',
-              boxShadow: 'xl',
-            }}
+          <HStack
+            justifyContent={{ base: 'center', md: 'left' }}
+            alignContent="end"
+            pt={{ sm: 4, md: 8 }}
           >
-            Submit
-          </Button>
+            {associateApplication.is_open ? (
+              <Link
+                href={associateApplication.application_url}
+                textDecoration="none"
+                isExternal
+              >
+                <Button
+                  fontFamily={'heading'}
+                  colorScheme="stripe"
+                  color="white"
+                >
+                  Associates
+                </Button>
+              </Link>
+            ) : (
+              ''
+            )}
+            {ambassadorApplication.is_open ? (
+              <Link href={ambassadorApplication.application_url} isExternal>
+                <Button
+                  fontFamily={'heading'}
+                  colorScheme="stripe"
+                  color="white"
+                >
+                  Ambassadors
+                </Button>
+              </Link>
+            ) : (
+              ''
+            )}
+          </HStack>
+          {associateApplication.is_open && ambassadorApplication.is_open ? (
+            ''
+          ) : (
+            <Alert status="warning" variant="subtle" color={'gray.800'}>
+              <AlertIcon />
+              {message}
+            </Alert>
+          )}
         </Stack>
       </Container>
     </Box>

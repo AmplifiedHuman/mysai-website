@@ -16,37 +16,37 @@ const renderAst = new RehypeReact({
   createElement: React.createElement,
   components: {
     h1: ({ children }) => (
-      <Heading as="h1" size="2xl">
+      <Heading as="h1" size="2xl" my="10px">
         {children}
       </Heading>
     ),
     h2: ({ children }) => (
-      <Heading as="h2" size="xl">
+      <Heading as="h2" size="xl" my="10px">
         {children}
       </Heading>
     ),
     h3: ({ children }) => (
-      <Heading as="h3" size="lg">
+      <Heading as="h3" size="lg" my="10px">
         {children}
       </Heading>
     ),
     h4: ({ children }) => (
-      <Heading as="h4" size="md">
+      <Heading as="h4" size="md" my="10px">
         {children}
       </Heading>
     ),
     h5: ({ children }) => (
-      <Heading as="h5" size="sm">
+      <Heading as="h5" size="sm" my="10px">
         {children}
       </Heading>
     ),
     h6: ({ children }) => (
-      <Heading as="h6" size="xs">
+      <Heading as="h6" size="xs" my="10px">
         {children}
       </Heading>
     ),
     p: ({ children }) => (
-      <Text fontSize={['lg', 'lg', 'xl', 'xl', 'xl']} my="35px">
+      <Text fontSize={['lg', 'lg', 'xl', 'xl', 'xl']} my="30px">
         {children}
       </Text>
     ),
@@ -54,10 +54,18 @@ const renderAst = new RehypeReact({
       return <Divider />;
     },
     ul: ({ children }) => {
-      return <UnorderedList spacing="2">{children}</UnorderedList>;
+      return (
+        <UnorderedList spacing="2" my="30px">
+          {children}
+        </UnorderedList>
+      );
     },
     ol: ({ children }) => {
-      return <OrderedList spacing="2">{children}</OrderedList>;
+      return (
+        <OrderedList spacing="2" my="30px">
+          {children}
+        </OrderedList>
+      );
     },
     li: ({ children }) => {
       return (

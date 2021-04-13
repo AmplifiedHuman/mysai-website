@@ -115,7 +115,7 @@ const ContactCard = () => {
               </FormControl>
               <Button
                 mt={4}
-                colorScheme="blue"
+                colorScheme="stripe"
                 type="submit"
                 isLoading={formState.isSubmitting}
               >
