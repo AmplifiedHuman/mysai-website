@@ -36,6 +36,13 @@ sections:
   match: "**/*.md"
   templates:
   - event
+- type: directory
+  path: src/pages/blog
+  label: Blog Posts
+  create: documents
+  match: "**/*.md"
+  templates:
+  - blog
 upload_dir: static/img
 public_path: "/img"
 front_matter_path: ''
