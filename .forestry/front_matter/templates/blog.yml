@@ -1,4 +1,36 @@
 ---
 label: Blog
 hide_body: false
-fields: []
+fields:
+- name: templateKey
+  type: text
+  config:
+    required: false
+  label: templateKey
+  description: template key (DO NOT MODIFY)
+  hidden: true
+  default: blog-template.js
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+  description: Title of blog post
+  default: New Blog Post
+- name: created_date
+  type: datetime
+  label: Created Date
+  description: Creation date of the blog post
+  config:
+    required: true
+    date_format: DD/MM/YYYY
+    time_format: h:mm A
+    display_utc: false
+    export_format: YYYY-MM-DDThh:mm
+  default: now
+- name: featured_image
+  type: file
+  config:
+    maxSize: 1
+  label: Featured Image
+  description: Thumbnail image of blog post
