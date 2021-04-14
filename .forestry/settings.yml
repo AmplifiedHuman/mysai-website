@@ -44,7 +44,7 @@ sections:
   templates:
   - blog
 upload_dir: https://res.cloudinary.com/mysai/image/upload
-public_path: ''
+public_path: https://res.cloudinary.com/mysai/image/upload
 front_matter_path: ''
 use_front_matter_path: 
 file_template: ":filename:"
