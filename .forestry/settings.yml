@@ -36,10 +36,17 @@ sections:
   match: "**/*.md"
   templates:
   - event
-upload_dir: static/img
-public_path: "/img"
+- type: directory
+  path: src/pages/blog
+  label: Blog Posts
+  create: documents
+  match: "**/*.md"
+  templates:
+  - blog
+upload_dir: ''
+public_path: ''
 front_matter_path: ''
-use_front_matter_path: false
+use_front_matter_path: 
 file_template: ":filename:"
 build:
   preview_output_directory: public
