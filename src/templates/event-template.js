@@ -7,7 +7,6 @@ import {
   VStack,
 } from '@chakra-ui/layout';
 import { graphql } from 'gatsby';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import PropTypes from 'prop-types';
 import React from 'react';
 import Layout from '../components/Layout';
@@ -20,6 +19,7 @@ import { BiLink } from '@react-icons/all-files/bi/BiLink';
 import { useColorModeValue } from '@chakra-ui/color-mode';
 import Icon from '@chakra-ui/icon';
 import { Button } from '@chakra-ui/button';
+import RemoteImage from '../components/RemoteImage';
 
 const randomColor = id => {
   const colors = [
@@ -43,7 +43,7 @@ const randomColor = id => {
 const EventPage = ({ data }) => {
   const markdownRemark = data.markdownRemark;
   const { frontmatter } = markdownRemark;
-  const featuredImage = getImage(frontmatter.featured_image);
+  const featuredImage = frontmatter.featured_image;
   const eventStartDate = moment(frontmatter.event_start);
   const eventEndDate = moment(frontmatter.event_end);
   const isSameDay = moment(frontmatter.event_start).isSame(
@@ -73,7 +73,7 @@ const EventPage = ({ data }) => {
         mb="4"
       >
         <Box w="full" maxW="650px">
-          <GatsbyImage image={featuredImage} alt={frontmatter.title} />
+          <RemoteImage url={featuredImage} alt={frontmatter.title} />
         </Box>
         <VStack justifyContent="start">
           <VStack
@@ -158,15 +158,7 @@ export const pageQuery = graphql`
         event_end
         location
         event_link
-        featured_image {
-          childImageSharp {
-            gatsbyImageData(
-              layout: FULL_WIDTH
-              placeholder: BLURRED
-              formats: [AUTO, WEBP, AVIF]
-            )
-          }
-        }
+        featured_image
       }
     }
   }

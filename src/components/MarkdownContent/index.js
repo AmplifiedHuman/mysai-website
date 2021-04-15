@@ -11,6 +11,7 @@ import React from 'react';
 import RehypeReact from 'rehype-react';
 import '@fontsource/merriweather';
 import { Divider } from '@chakra-ui/layout';
+import RemoteImage from '../RemoteImage';
 
 const renderAst = new RehypeReact({
   createElement: React.createElement,
@@ -87,6 +88,9 @@ const renderAst = new RehypeReact({
           {props.children}
         </Link>
       );
+    },
+    img: props => {
+      return <RemoteImage url={props.src} />;
     },
   },
 }).Compiler;

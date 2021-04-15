@@ -1,7 +1,6 @@
 import React from 'react';
 import { Stack, Heading, Center } from '@chakra-ui/react';
 import EventCard from '../EventCard';
-import { getImage } from 'gatsby-plugin-image';
 
 const UpcomingEvents = ({ upcomingEvents }) => {
   return (
@@ -27,7 +26,7 @@ const UpcomingEvents = ({ upcomingEvents }) => {
                     eventEnd={frontmatter.event_end}
                     eventLink={frontmatter.event_link}
                     location={frontmatter.location}
-                    image={getImage(frontmatter.featured_image)}
+                    image={frontmatter.featured_image}
                     link={slug}
                     key={frontmatter.title}
                   />

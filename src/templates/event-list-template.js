@@ -13,7 +13,6 @@ import {
   Stack,
   Text,
 } from '@chakra-ui/layout';
-import { getImage } from 'gatsby-plugin-image';
 import EventCard from '../components/EventCard';
 import { Image } from '@chakra-ui/image';
 import Icon from '@chakra-ui/icon';
@@ -161,7 +160,7 @@ const EventsPage = ({ data, pageContext }) => {
                 title={frontmatter.title}
                 eventStart={frontmatter.event_start}
                 eventEnd={frontmatter.event_end}
-                image={getImage(frontmatter.featured_image)}
+                image={frontmatter.featured_image}
                 link={slug}
                 location={frontmatter.location}
                 eventLink={frontmatter.event_link}
@@ -224,15 +223,7 @@ export const data = graphql`
             event_end(formatString: "Do MMM YYYY h:mma")
             location
             event_link
-            featured_image {
-              childImageSharp {
-                gatsbyImageData(
-                  layout: FULL_WIDTH
-                  placeholder: BLURRED
-                  formats: [AUTO, WEBP, AVIF]
-                )
-              }
-            }
+            featured_image
           }
         }
       }

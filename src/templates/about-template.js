@@ -37,11 +37,7 @@ export const data = graphql`
           team_member {
             member_course
             member_name
-            member_photo {
-              childImageSharp {
-                gatsbyImageData
-              }
-            }
+            member_photo
             member_position
             member_school
           }

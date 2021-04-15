@@ -5,13 +5,12 @@ import Layout from '../components/Layout';
 import Seo from '../components/SEO';
 import Hero from '../components/Hero';
 import Intro from '../components/Intro';
-import { getImage } from 'gatsby-plugin-image';
 import UpcomingEvents from '../components/UpcomingEvents';
 import NewBlogPosts from '../components/NewBlogPosts';
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.index;
-  const image = getImage(frontmatter.main_image);
+  const image = frontmatter.main_image;
   const info = frontmatter.info;
   const upcomingEvents = data.upcoming_events.edges;
   return (
@@ -48,15 +47,7 @@ export const data = graphql`
             event_end(formatString: "Do MMM YYYY h:mma")
             location
             event_link
-            featured_image {
-              childImageSharp {
-                gatsbyImageData(
-                  layout: FULL_WIDTH
-                  placeholder: BLURRED
-                  formats: [AUTO, WEBP, AVIF]
-                )
-              }
-            }
+            featured_image
           }
         }
       }
@@ -66,15 +57,7 @@ export const data = graphql`
     ) {
       frontmatter {
         description
-        main_image {
-          childImageSharp {
-            gatsbyImageData(
-              layout: FULL_WIDTH
-              placeholder: BLURRED
-              formats: [AUTO, WEBP, AVIF]
-            )
-          }
-        }
+        main_image
         info {
           info_item {
             info_item_description

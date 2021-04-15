@@ -4,37 +4,37 @@ committee_year: 2021
 committee_list:
   - team_member:
       member_course: 2nd year Mechanical Engineering student
-      member_photo: '/img/image30.jpg'
+      member_photo: '/v1618431294/test_pic.jpg'
       member_name: Testing Name
       member_school: Testing School Dublin
       member_position: Testing Position
   - team_member:
       member_course: 2nd year Finance and Accounting student
-      member_photo: '/img/image30.jpg'
+      member_photo: '/v1618431294/test_pic.jpg'
       member_name: Erin Pung7
       member_school: Technological University Dublin
       member_position: Director of Project and Events Department, National Treasurer
   - team_member:
       member_course: 2nd year Finance and Accounting student
-      member_photo: '/img/image30.jpg'
+      member_photo: '/v1618431294/test_pic.jpg'
       member_name: Erin Pung5
       member_school: Technological University Dublin
       member_position: Director of Project and Events Department, National Treasurer
   - team_member:
       member_course: 2nd year Finance and Accounting student
-      member_photo: '/img/image30.jpg'
+      member_photo: '/v1618431294/test_pic.jpg'
       member_name: Erin Pung1
       member_school: Technological University Dublin
       member_position: Director of Project and Events Department, National Treasurer
   - team_member:
       member_course: 2nd year Finance and Accounting student
-      member_photo: '/img/image30.jpg'
+      member_photo: '/v1618431294/test_pic.jpg'
       member_name: Erin Pung2
       member_school: Technological University Dublin
       member_position: Director of Project and Events Department, National Treasurer
   - team_member:
       member_course: 2nd year Finance and Accounting student
-      member_photo: '/img/image30.jpg'
+      member_photo: '/v1618431294/test_pic.jpg'
       member_name: Erin Pung3
       member_school: Technological University Dublin
       member_position: Director of Project and Events Department, National Treasurer

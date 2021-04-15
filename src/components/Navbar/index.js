@@ -11,9 +11,10 @@ const NavBar = () => {
   const iconOptions = { size: '30px', scheme: 'gray', variant: 'ghost' };
   const routes = [
     { name: 'Home', link: '/' },
-    { name: 'About Us', link: '/about' },
+    { name: 'About', link: '/about' },
     { name: 'Events', link: '/events' },
-    { name: 'Join Us', link: '/join' },
+    { name: 'Blog', link: '/blog' },
+    { name: 'Join', link: '/join' },
   ];
   let buttons = (
     <>
@@ -44,7 +45,7 @@ const NavBar = () => {
   );
 
   return (
-    <Flex alignItems="center" >
+    <Flex alignItems="center">
       <Logo />
       <Spacer />
       <ButtonGroup

@@ -20,6 +20,7 @@ As an associate, you will
 ### What does an associate do?
 
 Associates work under specific departments of their choice towards set goals of the department which:
+
 - ensure the smooth operation of department and association
 - given opportunity to lead and take charge of different projects and initiatives
 - have the opportunity to apply for directorship for next council

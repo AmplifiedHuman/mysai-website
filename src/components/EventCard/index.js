@@ -8,10 +8,10 @@ import {
   Button,
   Spacer,
 } from '@chakra-ui/react';
-import { GatsbyImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
 import moment from 'moment-timezone';
 import { google } from 'calendar-link';
+import RemoteImage from '../RemoteImage';
 
 const openLink = link => {
   window.open(link, '_blank').focus();
@@ -34,22 +34,23 @@ export default function EventCard({
     description: `<a>${eventLink}</a>`,
   };
   return (
-    <Stack
+    <Box
+      maxW={['600px', '600px', '600px', '350px', '350px']}
       w={'full'}
-      maxW="2xl"
       bg={useColorModeValue('white', 'gray.900')}
       boxShadow={'2xl'}
       rounded={'md'}
       p={6}
       overflow={'hidden'}
-      flexGrow={'3'}
       as={Link}
       to={link}
+      display="flex"
+      flexDir='column'
     >
       <Box h={'210px'} bg={'gray.100'} mt={-6} mx={-6} mb={6} pos={'relative'}>
-        <GatsbyImage
-          image={image}
-          style={{ height: '100%', width: '100%' }}
+        <RemoteImage
+          url={image}
+          style={{ height: '100%', width: '100%', objectFit: 'cover' }}
           alt={title}
         />
       </Box>
@@ -61,7 +62,7 @@ export default function EventCard({
           fontSize={'sm'}
           letterSpacing={1.1}
           bgGradient="linear(to-r, red.400,pink.400)"
-          bgClip='text'
+          bgClip="text"
         >
           Event
         </Text>
@@ -91,6 +92,6 @@ export default function EventCard({
           </Button>
         )}
       </Stack>
-    </Stack>
+    </Box>
   );
 }

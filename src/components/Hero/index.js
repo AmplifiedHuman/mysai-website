@@ -4,8 +4,8 @@ import { Stack } from '@chakra-ui/layout';
 import { Text } from '@chakra-ui/layout';
 import { Box } from '@chakra-ui/layout';
 import { Link } from 'gatsby';
-import { GatsbyImage } from 'gatsby-plugin-image';
 import React from 'react';
+import RemoteImage from '../RemoteImage';
 
 const Hero = props => {
   const { description, frontImage } = props;
@@ -100,8 +100,8 @@ const Hero = props => {
         </Box>
       </Box>
       <Box w="full" maxW="650px">
-        <GatsbyImage
-          image={frontImage}
+        <RemoteImage
+          url={frontImage}
           alt="MYSAI Photo"
           style={{ borderRadius: '5px' }}
         />

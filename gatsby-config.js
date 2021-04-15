@@ -35,29 +35,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     'gatsby-transformer-sharp',
     `gatsby-plugin-image`,
-    {
-      resolve: 'gatsby-transformer-remark',
-      options: {
-        plugins: [
-          {
-            resolve: 'gatsby-remark-relative-images',
-            options: {
-              name: 'uploads',
-            },
-          },
-          {
-            resolve: 'gatsby-remark-copy-linked-files',
-          },
-          {
-            resolve: 'gatsby-remark-images',
-            options: {
-              linkImagesToOriginal: false,
-              maxWidth: 1024,
-            },
-          },
-        ],
-      },
-    },
+    'gatsby-transformer-remark',
     {
       resolve: '@chakra-ui/gatsby-plugin',
       options: {
