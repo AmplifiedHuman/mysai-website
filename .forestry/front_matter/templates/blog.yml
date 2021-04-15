@@ -9,7 +9,7 @@ fields:
   label: templateKey
   description: template key (DO NOT MODIFY)
   hidden: true
-  default: blog-template.js
+  default: blog-template
 - name: title
   type: text
   config:
