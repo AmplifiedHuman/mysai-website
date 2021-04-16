@@ -1,15 +1,23 @@
 import React from 'react';
-import { Stack, Heading, Center } from '@chakra-ui/react';
+import { Stack, Heading, Center, Text } from '@chakra-ui/react';
 import EventCard from '../EventCard';
 
 const UpcomingEvents = ({ upcomingEvents }) => {
   return (
     <Stack>
-      <Heading mb={10}>Upcoming Events</Heading>
+      <Heading mb={10}>
+        Upcoming Events{' '}
+        <Text mx="2" display="inline-block">
+          <span role="img" aria-label="confetti">
+            🎉
+          </span>
+        </Text>
+      </Heading>
       <Center>
         {upcomingEvents.length !== 0 ? (
           <Stack
             direction={['column', 'column', 'column', 'row', 'row']}
+            justifyContent="center"
             spacing="30"
           >
             {upcomingEvents.map(

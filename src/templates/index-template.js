@@ -13,19 +13,40 @@ const IndexPage = ({ data }) => {
   const image = frontmatter.main_image;
   const info = frontmatter.info;
   const upcomingEvents = data.upcoming_events.edges;
+  const newPosts = data.new_posts.edges;
   return (
     <Layout>
       <Seo title="Home" />
       <Hero description={frontmatter.description} frontImage={image} />
       <Intro info={info} />
       <UpcomingEvents upcomingEvents={upcomingEvents} />
-      <NewBlogPosts />
+      <NewBlogPosts newPosts={newPosts} />
     </Layout>
   );
 };
 
 export const data = graphql`
   query IndexQuery($currentDate: Date!) {
+    new_posts: allMarkdownRemark(
+      filter: { frontmatter: { templateKey: { eq: "blog-template" } } }
+      sort: { fields: [frontmatter___created_date], order: DESC }
+      limit: 6
+    ) {
+      edges {
+        node {
+          id
+          excerpt
+          timeToRead
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            created_date(formatString: "Do MMM YYYY")
+          }
+        }
+      }
+    }
     upcoming_events: allMarkdownRemark(
       filter: {
         frontmatter: {

@@ -131,6 +131,7 @@ const Blob = props => {
 
 const EventsPage = ({ data, pageContext }) => {
   const { currentPage, numPages } = pageContext;
+  console.log(pageContext);
   const isFirst = currentPage === 1;
   const isLast = currentPage === numPages;
   const prevPage =

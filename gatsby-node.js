@@ -27,6 +27,15 @@ exports.createPages = ({ actions, graphql }) => {
           }
         }
       }
+      blog_posts: allMarkdownRemark(
+        filter: { frontmatter: { templateKey: { eq: "blog-template" } } }
+      ) {
+        edges {
+          node {
+            id
+          }
+        }
+      }
     }
   `).then(result => {
     if (result.errors) {
@@ -51,17 +60,35 @@ exports.createPages = ({ actions, graphql }) => {
       });
     });
 
+    // events pagination
     const events = result.data.events.edges;
-    const postsPerPage = 9;
-    const numPages = Math.ceil(events.length / postsPerPage);
-    Array.from({ length: numPages }).forEach((_, i) => {
+    const eventsPerPage = 9;
+    const numEventPages = Math.ceil(events.length / eventsPerPage);
+    Array.from({ length: numEventPages }).forEach((_, i) => {
       createPage({
         path: i === 0 ? `/events/` : `/events/${i + 1}`,
         component: path.resolve('./src/templates/event-list-template.js'),
         context: {
-          limit: postsPerPage,
-          skip: i * postsPerPage,
-          numPages,
+          limit: eventsPerPage,
+          skip: i * eventsPerPage,
+          numPages: numEventPages,
+          currentPage: i + 1,
+        },
+      });
+    });
+
+    // blog pagination
+    const blogPosts = result.data.blog_posts.edges;
+    const blogPerPage = 6;
+    const numBlogPages = Math.ceil(blogPosts.length / blogPerPage);
+    Array.from({ length: numBlogPages }).forEach((_, i) => {
+      createPage({
+        path: i === 0 ? `/blog/` : `/blog/${i + 1}`,
+        component: path.resolve('./src/templates/blog-list-template.js'),
+        context: {
+          limit: blogPerPage,
+          skip: i * blogPerPage,
+          numPages: numBlogPages,
           currentPage: i + 1,
         },
       });

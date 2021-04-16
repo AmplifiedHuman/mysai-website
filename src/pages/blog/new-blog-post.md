@@ -1,8 +1,8 @@
 ---
 templateKey: blog-template
 title: New Blog Post Test
-created_date: 2021-04-14T08:12
-featured_image: "/v1618427506/Totoro_pv8kfm.png"
+created_date: 2021-04-15T08:12
+featured_image: "/v1616035966/image15_mqjweb.jpg"
 is_pinned: false
 
 ---

@@ -1,69 +1,94 @@
 import React from 'react';
 import {
   Box,
-  Heading,
   Text,
-  Stack,
-  Avatar,
   useColorModeValue,
+  Flex,
+  chakra,
+  Link,
 } from '@chakra-ui/react';
-import { StaticImage } from 'gatsby-plugin-image';
+import { Link as GatsbyLink } from 'gatsby';
 
-export default function BlogCard() {
+export default function BlogCard({
+  title,
+  createdDate,
+  excerpt,
+  timeToRead,
+  slug,
+}) {
   return (
-    <Box
-      maxW={['600px', '600px', '600px', '350px', '350px']}
-      w={'full'}
+    <Flex
+      w="full"
+      alignItems="center"
+      justifyContent="center"
+      rounded="md"
       bg={useColorModeValue('white', 'gray.900')}
-      boxShadow={'2xl'}
-      rounded={'md'}
-      p={6}
-      overflow={'hidden'}
     >
-      <Box h={'210px'} bg={'gray.100'} mt={-6} mx={-6} mb={6} pos={'relative'}>
-        <StaticImage
-          src={
-            'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
-          }
-          style={{ height: '100%', width: '100%' }}
-          transformOptions={{ fit: 'contain' }}
-          alt=""
-        />
+      <Box
+        mx="auto"
+        px={8}
+        py={4}
+        rounded="md"
+        boxShadow="2xl"
+        bg={useColorModeValue('white', 'gray.900')}
+        maxW="2xl"
+      >
+        <Flex justifyContent="space-between" alignItems="center">
+          <chakra.span
+            fontSize="sm"
+            color={useColorModeValue('gray.600', 'gray.400')}
+          >
+            {createdDate}
+          </chakra.span>
+          <Text
+            px={3}
+            py={1}
+            bg="stripe.400"
+            color="white"
+            fontSize="sm"
+            fontWeight="700"
+            rounded="md"
+          >
+            Blog
+          </Text>
+        </Flex>
+
+        <Box mt={2}>
+          <Link
+            fontSize="xl"
+            color={useColorModeValue('gray.700', 'white')}
+            fontWeight="700"
+            _hover={{
+              color: useColorModeValue('gray.600', 'gray.300'),
+              textDecor: 'none',
+            }}
+            as={GatsbyLink}
+            to={slug}
+          >
+            {title}
+          </Link>
+          <chakra.p
+            mt={2}
+            color={useColorModeValue('gray.500', 'gray.300')}
+          >
+            {excerpt}
+          </chakra.p>
+        </Box>
+
+        <Flex justifyContent="space-between" alignItems="center" mt={4}>
+          <Link
+            color={useColorModeValue('stripe.600', 'stripe.200')}
+            _hover={{ textDecor: 'underline' }}
+            as={GatsbyLink}
+            to={slug}
+          >
+            Read more
+          </Link>
+          <Text color={useColorModeValue('gray.600', 'gray.300')}>
+            {timeToRead} min read
+          </Text>
+        </Flex>
       </Box>
-      <Stack>
-        <Text
-          color={'green.500'}
-          textTransform={'uppercase'}
-          fontWeight={800}
-          fontSize={'sm'}
-          letterSpacing={1.1}
-        >
-          Blog
-        </Text>
-        <Heading
-          color={useColorModeValue('gray.700', 'white')}
-          fontSize={'2xl'}
-          fontFamily={'body'}
-        >
-          Boost your conversion rate
-        </Heading>
-        <Text color={'gray.500'}>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
-        </Text>
-      </Stack>
-      <Stack mt={6} direction={'row'} spacing={4} align={'center'}>
-        <Avatar
-          src={
-            'https://cdn2.iconfinder.com/data/icons/random-outline-3/48/random_14-512.png'
-          }
-          alt={'Author'}
-        />
-        <Stack direction={'column'} spacing={0} fontSize={'sm'}>
-          <Text fontWeight={600}>MYSAI Test</Text>
-          <Text color={'gray.500'}>Feb 08, 2021 · 6min read</Text>
-        </Stack>
-      </Stack>
-    </Box>
+    </Flex>
   );
 }

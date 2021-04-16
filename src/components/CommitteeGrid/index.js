@@ -29,7 +29,7 @@ const CommitteeCard = ({
   return (
     <Box py={6}>
       <Flex
-        boxShadow={'xl'}
+        boxShadow={'2xl'}
         maxW={'350px'}
         direction="column"
         width={'full'}
