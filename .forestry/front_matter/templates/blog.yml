@@ -34,5 +34,9 @@ fields:
     maxSize: 1
   label: Featured Image
   description: Thumbnail image of blog post
+- name: is_pinned
+  type: boolean
+  label: Pinned
+  description: Enable if blog post is a pinned post
 pages:
 - src/pages/blog/new-blog-post.md
