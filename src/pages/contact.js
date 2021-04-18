@@ -241,6 +241,9 @@ const AdditionalContacts = () => {
           aria-label="Facebook"
           size="lg"
           fontSize="40px"
+          as={Link}
+          href="https://www.facebook.com/official.mysai"
+          target="_blank"
         />
         <IconButton
           colorScheme="twitter"
@@ -249,6 +252,9 @@ const AdditionalContacts = () => {
           aria-label="Twitter"
           size="lg"
           fontSize="40px"
+          as={Link}
+          href="https://twitter.com/mysaireland?lang=en"
+          target="_blank"
         />
         <IconButton
           colorScheme="pink"
@@ -257,6 +263,9 @@ const AdditionalContacts = () => {
           aria-label="Instagram"
           size="lg"
           fontSize="40px"
+          as={Link}
+          href="https://www.instagram.com/mysaireland/"
+          target="_blank"
         />
         <IconButton
           colorScheme="linkedin"
@@ -265,6 +274,9 @@ const AdditionalContacts = () => {
           aria-label="LinkedIn"
           size="lg"
           fontSize="40px"
+          as={Link}
+          href="https://www.linkedin.com/company/mysai-malaysian-student-association-of-ireland/"
+          target="_blank"
         />
       </HStack>
     </VStack>

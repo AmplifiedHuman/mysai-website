@@ -10,7 +10,8 @@ import {
   VisuallyHidden,
 } from '@chakra-ui/react';
 import { FaInstagram } from '@react-icons/all-files/fa/FaInstagram';
-import { FaGithub } from '@react-icons/all-files/fa/FaGithub';
+import { FaFacebook } from '@react-icons/all-files/fa/FaFacebook';
+import { FaTwitter } from '@react-icons/all-files/fa/FaTwitter';
 import { FaLinkedinIn } from '@react-icons/all-files/fa/FaLinkedinIn';
 import moment from 'moment';
 
@@ -59,6 +60,18 @@ const Footer = () => {
         </Text>
         <Stack direction={'row'} spacing={5}>
           <SocialButton
+            label={'Facebook'}
+            href={'https://www.facebook.com/official.mysai'}
+          >
+            <FaFacebook />
+          </SocialButton>
+          <SocialButton
+            label={'Twitter'}
+            href={'https://twitter.com/mysaireland?lang=en'}
+          >
+            <FaTwitter />
+          </SocialButton>
+          <SocialButton
             label={'Instagram'}
             href={'https://www.instagram.com/mysaireland/'}
           >
@@ -69,12 +82,6 @@ const Footer = () => {
             href={'https://www.linkedin.com/company/mysai/about/'}
           >
             <FaLinkedinIn />
-          </SocialButton>
-          <SocialButton
-            label={'Github'}
-            href={'https://github.com/AmplifiedHuman/mysai-website'}
-          >
-            <FaGithub />
           </SocialButton>
         </Stack>
       </Container>
