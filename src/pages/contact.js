@@ -19,12 +19,12 @@ import React, { useState } from 'react';
 
 import Layout from '../components/Layout';
 import Seo from '../components/SEO';
-import { Image } from '@chakra-ui/image';
 import { FaCheckCircle } from '@react-icons/all-files/fa/FaCheckCircle';
 import { FaInstagram } from '@react-icons/all-files/fa/FaInstagram';
 import { FaFacebook } from '@react-icons/all-files/fa/FaFacebook';
 import { FaTwitter } from '@react-icons/all-files/fa/FaTwitter';
 import { FaLinkedinIn } from '@react-icons/all-files/fa/FaLinkedinIn';
+import RemoteImage from '../components/RemoteImage';
 
 const ContactCard = () => {
   const { handleSubmit, register, formState } = useForm();
@@ -127,8 +127,8 @@ const ContactCard = () => {
           )}
           {formStatus === 'ERROR' ? (
             <Flex direction="column" alignItems="center">
-              <Image
-                src="https://res.cloudinary.com/mysai/image/upload/v1617416625/Sad_face_Outline_hw6gst.svg"
+              <RemoteImage
+                url="v1617416625/Sad_face_Outline_hw6gst.svg"
                 alt="Sad Face"
               />
               <Heading size="lg" textAlign="center">

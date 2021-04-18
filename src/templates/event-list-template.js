@@ -14,10 +14,10 @@ import {
   Text,
 } from '@chakra-ui/layout';
 import EventCard from '../components/EventCard';
-import { Image } from '@chakra-ui/image';
 import Icon from '@chakra-ui/icon';
 import { useColorModeValue } from '@chakra-ui/color-mode';
 import { Button } from '@chakra-ui/button';
+import RemoteImage from '../components/RemoteImage';
 
 const Banner = () => {
   return (
@@ -93,15 +93,13 @@ const Banner = () => {
             overflow={'hidden'}
           >
             {/* TODO: temporary image */}
-            <Image
+            <RemoteImage
               alt={'Hero Image'}
               fit={'cover'}
               align={'center'}
               w={'100%'}
               h={'100%'}
-              src={
-                'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2102&q=80'
-              }
+              url="v1618761597/events_cover.jpg"
             />
           </Box>
         </Flex>
