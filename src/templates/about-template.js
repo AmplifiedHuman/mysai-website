@@ -14,10 +14,7 @@ const AboutPage = ({ data }) => {
   return (
     <Layout>
       <Seo title="About" />
-      <Heading
-        size="2xl"
-        textAlign="center"
-      >
+      <Heading size="2xl" textAlign="center">
         About Us
       </Heading>
       <MarkdownContent html={markdownRemark.htmlAst} type="about" />

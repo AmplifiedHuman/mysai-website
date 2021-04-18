@@ -67,10 +67,7 @@ export default function BlogCard({
           >
             {title}
           </Link>
-          <chakra.p
-            mt={2}
-            color={useColorModeValue('gray.500', 'gray.300')}
-          >
+          <chakra.p mt={2} color={useColorModeValue('gray.500', 'gray.300')}>
             {excerpt}
           </chakra.p>
         </Box>

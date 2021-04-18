@@ -45,7 +45,7 @@ export default function EventCard({
       as={Link}
       to={link}
       display="flex"
-      flexDir='column'
+      flexDir="column"
     >
       <Box h={'210px'} bg={'gray.100'} mt={-6} mx={-6} mb={6} pos={'relative'}>
         <RemoteImage
