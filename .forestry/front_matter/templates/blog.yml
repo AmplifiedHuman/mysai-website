@@ -38,5 +38,11 @@ fields:
   type: boolean
   label: Pinned
   description: Enable if blog post is a pinned post
+- name: author
+  type: text
+  config:
+    required: true
+  label: Author
+  description: Author of the blog, can contain multiple names
 pages:
 - src/pages/blog/new-blog-post.md
