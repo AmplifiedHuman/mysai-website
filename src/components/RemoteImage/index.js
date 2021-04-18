@@ -6,14 +6,21 @@ const RemoteImage = ({ url, ...props }) => {
   const lowQualityOptions = 'e_blur:2000,q_1,f_auto';
   const highQualityOptions = 'q_auto,f_auto,c_scale';
 
-  const [option, setOption] = useState(lowQualityOptions);
+  const [isLoading, setLoading] = useState(true);
   return (
-    <Image
-      src={`${baseURL}/${option}/${url}`}
-      {...props}
-      loading="lazy"
-      onLoad={() => setOption(highQualityOptions)}
-    />
+    <>
+      <Image
+        src={`${baseURL}/${lowQualityOptions}/${url}`}
+        {...props}
+        display={isLoading ? 'block' : 'none'}
+      />
+      <Image
+        src={`${baseURL}/${highQualityOptions}/${url}`}
+        display={isLoading ? 'none' : 'block'}
+        onLoad={() => setLoading(false)}
+        {...props}
+      />
+    </>
   );
 };
 
