@@ -4,6 +4,7 @@ title: Things to prepare before coming to Ireland
 created_date: 2021-04-15T08:12
 featured_image: '/v1616035966/image15_mqjweb.jpg'
 is_pinned: false
+author: Jane Doe, John Doe
 ---
 
 The Specialty Coffee Association of America (_SCAA_), founded in 1982, is a non-profit trade organisation for the specialty coffee industry. With members located in more than 40 countries, SCAA represents every segment of the specialty **coffee industry**, including:
