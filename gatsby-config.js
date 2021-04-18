@@ -1,20 +1,33 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `MYSAI`,
+    description: `The Malaysian Student Association of Ireland (MYSAI) a national student organisation based in Ireland set up to provide welfare for
+    the Malaysian student community.`,
+    author: `Jason Tee`,
   },
   plugins: [
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Malaysian Student Association of Ireland`,
+        short_name: `MYSAI`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#FFFFFF`,
+        theme_color: `#FFFFFF`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`,
+        icon: `static/img/favicon-32x32.png`,
+        icons: [
+          {
+            src: `static/img/android-chrome-192x192.png`,
+            sizes: `192x192`,
+            type: `image/png`,
+          },
+          {
+            src: `static/img/android-chrome-512x512.png`,
+            sizes: `512x512`,
+            type: `image/png`,
+          },
+        ],
       },
     },
     `gatsby-plugin-react-helmet`,
@@ -51,8 +64,5 @@ module.exports = {
         isUsingColorMode: true,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 };

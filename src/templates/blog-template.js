@@ -15,7 +15,7 @@ const BlogPage = ({ data }) => {
     <Layout>
       <Seo title={frontmatter.title} />
       <Flex flexDir="column" mx="auto" maxW="5xl">
-        <RemoteImage url={frontmatter.featured_image} />
+        <RemoteImage url={frontmatter.featured_image} alt='Featured Image'/>
       </Flex>
       <Flex flexDir="column" mx="auto" alignItems="left" px={px}>
         <Heading size="2xl" textAlign="left" my="8" lineHeight="1.2">
