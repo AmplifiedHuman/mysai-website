@@ -80,7 +80,7 @@ const CommitteeCard = ({
           whiteSpace="normal"
           px={3}
         >
-          {committeeName} is a {course} studying in{' '}
+          {committeeName} is a {course} student studying in{' '}
           <Text fontWeight="bold" whiteSpace="normal" as="span">
             {school}
           </Text>
