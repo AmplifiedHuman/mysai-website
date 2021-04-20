@@ -52,8 +52,8 @@ fields:
       config:
         required: true
       label: Member Course
-      description: 'Enter course and year (For example: 2nd Year in Mechanical Engineering)'
-      default: 2nd Year in Mechanical Engineering
+      description: 'Enter course and year (For example: 2nd Year Mechanical Engineering)'
+      default: 2nd Year Mechanical Engineering
     - name: member_position
       type: text
       config:
