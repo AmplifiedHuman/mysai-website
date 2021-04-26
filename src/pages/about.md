@@ -51,28 +51,116 @@ committee_list:
     member_school: Galway-Mayo Institute of Technology
     member_position: National Secretary Department
 department:
-- department_name: Student Ambassadors
-  team_member:
-  - member_name: Ryan Yaw
-    member_school: University College Dublin
-    member_course: 3rd Year BA Music
-  - member_name: Test Name
-    member_school: Test Name University
-    member_course: 2nd Year Test Course
-  - member_name: 'Test Name #2'
-    member_course: 'Test Course #2'
-    member_school: Test School Ireland
 - department_name: Public Relations
   team_member:
+  - member_name: Damien Khaw
+    member_school: Galway-Mayo Institute of Technology
+    member_course: 2nd Year Business Information Systems
+  - member_name: Eunice Chuah
+    member_school: Dundalk Institute of Technology
+    member_course: 2nd Year Digital Marketing, Communications and Public Relations
+  - member_name: Aiman Muazzam
+    member_course: 3rd Year TV, Radio & Media
+    member_school: Institute of Technology, Tralee
+  - member_name: Caren Lim
+    member_course: 2nd Year Pharmaceutical Science
+    member_school: Waterford Institute of Technology
+  - member_name: Jason Tee
+    member_course: 3rd Year Computer Science
+    member_school: University College Dublin
+  - member_name: Jane Birdie Ong
+    member_course: 2nd Year Medicine
+    member_school: National University of Ireland, Galway
+- department_name: Welfare
+  team_member:
+  - member_name: Cheryl Voon
+    member_course: 1st Year Psychology
+    member_school: University College Cork
+  - member_name: Terry Tan
+    member_course: 1st Year Accounting & Finance
+    member_school: Athlone Institute of Technology
+- department_name: Projects and Events
+  team_member:
+  - member_name: Erin Pung
+    member_course: 2nd Year Accounting & Finance
+    member_school: Technological University Dublin
+  - member_name: Bryan Lim
+    member_course: 2nd Year Medicine
+    member_school: National University of Ireland, Galway
+  - member_name: Aiman Yushaq
+    member_course: 2nd Year Medicine
+    member_school: Trinity College Dublin
+  - member_name: Wen Heong
+    member_course: 2nd Year Business
+    member_school: University of Limerick
+  - member_name: Rishaanthan
+    member_course: 4th Year Aerospace Engineering
+    member_school: Institute of Technology, Carlow
+  - member_name: Durgashini
+    member_school: Waterford Institute of Technology
+    member_course: 2nd Year Computer Forensics and Security
+- department_name: Secretarial
+  team_member:
+  - member_name: Joey Eng Sze Jann
+    member_course: 2nd Year Medicine
+    member_school: University College Dublin
+  - member_name: Gabriel Hang
+    member_course: 2nd Year Computing in Software Development
+    member_school: Galway-Mayo Institute of Technology
+- department_name: Treasury
+  team_member:
+  - member_name: Erin Pung
+    member_course: 2nd Year Accounting & Finance
+    member_school: Technological University Dublin
+- department_name: Human Resource
+  team_member:
+  - member_name: Allyna Loo
+    member_course: 2nd Year Medicine
+    member_school: University College Dublin
+  - member_name: E Qing Kee
+    member_course: 2nd Year Psychology
+    member_school: National College of Ireland
+- department_name: Student Ambassadors
+  team_member:
+  - member_name: Yuki Cheah
+    member_course: 2nd Year Actuarial & Financial Maths
+    member_school: Dublin City University
+  - member_name: Tania Bhinder
+    member_course: 2nd Year Dentistry
+    member_school: University College Cork
+  - member_name: Tan Jer Kent
+    member_school: Athlone Institute of Technology
+    member_course: 1st Year Mechanical Engineering
+  - member_name: Shiuan Chiam
+    member_school: Institute of Technology, Carlow
+    member_course: 4th Year Aerospace Engineering
+  - member_name: Lin Yuan Chong
+    member_school: Technological University Dublin (Blanchardstown)
+    member_course: 2nd Year General Computing
+  - member_name: Jason Tong
+    member_course: 3rd Year Civil Engineering
+    member_school: Dundalk Institute of Technology
+  - member_name: Ian Chiam
+    member_school: Limerick Insitute of Technology
+    member_course: 4th Year Electronic Engineering
+  - member_name: E Qing Kee
+    member_course: 2nd Year Psychology
+    member_school: National College of Ireland
+  - member_name: Damien Khaw
+    member_course: 2nd Year Business Information Systems
+    member_school: Galway-Mayo Institute of Technology
   - member_name: Ryan Yaw
     member_school: University College Dublin
-    member_course: 3rd Year BA Music
-  - member_name: Test Name
-    member_school: Test Name University
-    member_course: 2nd Year Test Course
-  - member_name: 'Test Name #2'
-    member_course: 'Test Course #2'
-    member_school: Test School Ireland
+    member_course: 3rd Year Music
+  - member_name: Adeebah
+    member_school: Trinity College Dublin
+    member_course: 2nd Year Medicine
+  - member_name: Alissa See
+    member_course: 3rd Year Arts with Data Science
+    member_school: National University of Ireland, Galway
+  - member_name: Anderson Teo
+    member_course: 2nd Year Law
+    member_school: Letterkenny Institute of Technology
 
 ---
 The Malaysia Student Association of Ireland (MYSAI) a national student organisation based in Ireland set up to provide welfare for the Malaysian student community. We are a diverse yet united team of passionate and driven Malaysian students coming from 14 different institutions/universities all over Ireland with various academic backgrounds.
