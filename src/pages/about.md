@@ -136,7 +136,7 @@ department:
     member_course: 4th Year Aerospace Engineering
   - member_name: Lin Yuan Chong
     member_school: Technological University Dublin (Blanchardstown)
-    member_course: 2nd Year General Computing
+    member_course: 3rd Year General Computing
   - member_name: Jason Tong
     member_course: 3rd Year Civil Engineering
     member_school: Dundalk Institute of Technology
