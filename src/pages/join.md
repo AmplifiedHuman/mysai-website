@@ -1,13 +1,13 @@
 ---
 associate_application:
-  is_open: true
+  is_open: false
   application_url: https://google.com
 ambassador_application:
   is_open: false
   application_url: ''
 templateKey: join-template
----
 
+---
 ### Why should I join MYSAI and what are the benefits?
 
 As an associate, you will
