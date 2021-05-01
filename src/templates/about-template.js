@@ -41,6 +41,7 @@ export const data = graphql`
         }
         department {
           department_name
+          description
           team_member {
             member_course
             member_name
