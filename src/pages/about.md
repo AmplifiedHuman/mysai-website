@@ -12,13 +12,13 @@ committee_list:
     member_course: 3rd Year Analytical & Pharmaceutical Chemistry
     member_photo: "/v1618431294/test_pic.jpg"
     member_name: Joey Lee
-    member_school: Cork Institute of Technology
+    member_school: Munster Technological University
     member_position: 'Vice-President of MYSAI 3rd Executive Council '
 - team_member:
     member_course: 2nd Year Pharmaceutical Science
     member_photo: "/v1618950467/irdina_jasme_lxs1jc.jpg"
     member_name: Irdina Jasme
-    member_school: Institute of Technology, Tralee
+    member_school: Munster Technological University
     member_position: Director of Corporate Relations Department
 - team_member:
     member_course: 2nd Year Finance and Accounting student
