@@ -71,6 +71,9 @@ department:
   - member_name: Jane Birdie Ong
     member_course: 2nd Year Medicine
     member_school: National University of Ireland, Galway
+  description: Lorem Ipsum has been the industry's standard dummy text ever since
+    the 1500s, when an unknown printer took a galley of type and scrambled it to make
+    a type specimen book.
 - department_name: Welfare
   team_member:
   - member_name: Cheryl Voon
@@ -79,6 +82,9 @@ department:
   - member_name: Terry Tan
     member_course: 1st Year Accounting & Finance
     member_school: Athlone Institute of Technology
+  description: Lorem Ipsum has been the industry's standard dummy text ever since
+    the 1500s, when an unknown printer took a galley of type and scrambled it to make
+    a type specimen book.
 - department_name: Projects and Events
   team_member:
   - member_name: Erin Pung
@@ -99,6 +105,9 @@ department:
   - member_name: Durgashini
     member_school: Waterford Institute of Technology
     member_course: 2nd Year Computer Forensics and Security
+  description: Lorem Ipsum has been the industry's standard dummy text ever since
+    the 1500s, when an unknown printer took a galley of type and scrambled it to make
+    a type specimen book.
 - department_name: Secretarial
   team_member:
   - member_name: Joey Eng Sze Jann
@@ -107,11 +116,17 @@ department:
   - member_name: Gabriel Hang
     member_course: 2nd Year Computing in Software Development
     member_school: Galway-Mayo Institute of Technology
+  description: Lorem Ipsum has been the industry's standard dummy text ever since
+    the 1500s, when an unknown printer took a galley of type and scrambled it to make
+    a type specimen book.
 - department_name: Treasury
   team_member:
   - member_name: Erin Pung
     member_course: 2nd Year Accounting & Finance
     member_school: Technological University Dublin
+  description: Lorem Ipsum has been the industry's standard dummy text ever since
+    the 1500s, when an unknown printer took a galley of type and scrambled it to make
+    a type specimen book.
 - department_name: Human Resource
   team_member:
   - member_name: Allyna Loo
@@ -120,6 +135,9 @@ department:
   - member_name: E Qing Kee
     member_course: 2nd Year Psychology
     member_school: National College of Ireland
+  description: Lorem Ipsum has been the industry's standard dummy text ever since
+    the 1500s, when an unknown printer took a galley of type and scrambled it to make
+    a type specimen book.
 - department_name: Student Ambassadors
   team_member:
   - member_name: Yuki Cheah
@@ -161,6 +179,9 @@ department:
   - member_name: Anderson Teo
     member_course: 2nd Year Law
     member_school: Letterkenny Institute of Technology
+  description: Lorem Ipsum has been the industry's standard dummy text ever since
+    the 1500s, when an unknown printer took a galley of type and scrambled it to make
+    a type specimen book.
 
 ---
 The Malaysia Student Association of Ireland (MYSAI) a national student organisation based in Ireland set up to provide welfare for the Malaysian student community. We are a diverse yet united team of passionate and driven Malaysian students coming from 14 different institutions/universities all over Ireland with various academic backgrounds.
