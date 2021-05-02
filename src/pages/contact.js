@@ -31,7 +31,7 @@ const ContactCard = () => {
   const [formStatus, setFormStatus] = useState('NEW');
   const onSubmit = async values => {
     try {
-      const res = await fetch('http://localhost:3001/contact', {
+      const res = await fetch('https://api.mysaireland.com/contact', {
         method: 'POST',
         body: JSON.stringify(values),
         headers: {
@@ -182,9 +182,9 @@ const AdditionalContacts = () => {
           <Heading size="md">General Enquiries</Heading>
           <Link
             color={useColorModeValue('gray.600', 'gray.300')}
-            href="mailto:general@mysaireland.com"
+            href="mailto:info@mysaireland.com"
           >
-            general@mysaireland.com
+            info@mysaireland.com
           </Link>
         </Box>
         <Box>
@@ -221,6 +221,24 @@ const AdditionalContacts = () => {
             href="mailto:events@mysaireland.com"
           >
             events@mysaireland.com
+          </Link>
+        </Box>
+        <Box>
+          <Heading size="md">Welfare</Heading>
+          <Link
+            color={useColorModeValue('gray.600', 'gray.300')}
+            href="mailto:welfare@mysaireland.com"
+          >
+            welfare@mysaireland.com
+          </Link>
+        </Box>
+        <Box>
+          <Heading size="md">Finance</Heading>
+          <Link
+            color={useColorModeValue('gray.600', 'gray.300')}
+            href="mailto:finance@mysaireland.com"
+          >
+            finance@mysaireland.com
           </Link>
         </Box>
         <Box>
