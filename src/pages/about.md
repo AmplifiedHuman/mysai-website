@@ -12,13 +12,13 @@ committee_list:
     member_course: 3rd Year Analytical & Pharmaceutical Chemistry
     member_photo: "/v1618431294/test_pic.jpg"
     member_name: Joey Lee
-    member_school: Cork Institute of Technology
+    member_school: Munster Technological University
     member_position: 'Vice-President of MYSAI 3rd Executive Council '
 - team_member:
     member_course: 2nd Year Pharmaceutical Science
     member_photo: "/v1618950467/irdina_jasme_lxs1jc.jpg"
     member_name: Irdina Jasme
-    member_school: Institute of Technology, Tralee
+    member_school: Munster Technological University
     member_position: Director of Corporate Relations Department
 - team_member:
     member_course: 2nd Year Finance and Accounting student
@@ -108,6 +108,19 @@ department:
   description: Lorem Ipsum has been the industry's standard dummy text ever since
     the 1500s, when an unknown printer took a galley of type and scrambled it to make
     a type specimen book.
+- department_name: Corporate Relations
+  team_member:
+  - member_name: Irdina Jasme
+    member_course: 2nd Year Pharmaceutical Science
+    member_school: Munster Technological University
+  - member_name: Tengku Lis Aisyah
+    member_course: 2nd Year Accounting & Finance
+    member_school: Institute of Technology, Carlow
+  description: The Malaysian Student Association of Ireland (MYSAI) a national student
+    organization based in Ireland set up to provide welfare for the Malaysian student
+    community. We are a diverse yet united team of passionate and driven Malaysian
+    students coming from 14 different institutions/universities all over Ireland with
+    various academic backgrounds.
 - department_name: Secretarial
   team_member:
   - member_name: Joey Eng Sze Jann
