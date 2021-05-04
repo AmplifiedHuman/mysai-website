@@ -9,12 +9,17 @@ import MarkdownContent from '../components/MarkdownContent';
 const JoinUsPage = ({ data }) => {
   const { markdownRemark } = data;
   const {
-    frontmatter: { associate_application, ambassador_application },
+    frontmatter: {
+      associate_application,
+      ambassador_application,
+      member_application,
+    },
   } = markdownRemark;
   return (
     <Layout>
       <Seo title="Join Us" />
       <JoinCard
+        memberApplication={member_application}
         associateApplication={associate_application}
         ambassadorApplication={ambassador_application}
       />
@@ -28,6 +33,7 @@ export const data = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "join-template" } }) {
       htmlAst
       frontmatter {
+        member_application
         associate_application {
           application_url
           is_open

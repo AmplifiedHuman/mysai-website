@@ -25,6 +25,7 @@ const avatars = [
 export default function JoinCard({
   associateApplication,
   ambassadorApplication,
+  memberApplication,
 }) {
   let message = 'Applications are currently closed for';
   if (!associateApplication.is_open && !ambassadorApplication.is_open) {
@@ -51,7 +52,7 @@ export default function JoinCard({
             zIndex={2}
             textAlign={{ base: 'center', md: 'left' }}
           >
-            Associates{' '}
+            Members, Associates{' '}
             <Text
               as={'span'}
               bgGradient="linear(to-bl, #3370ff,#5C8DFF)"
@@ -59,7 +60,7 @@ export default function JoinCard({
             >
               &
             </Text>{' '}
-            Student Ambassadors
+            Ambassadors{' '}
           </Heading>
           <Stack
             direction={'row'}
@@ -127,7 +128,7 @@ export default function JoinCard({
           bg={'white'}
           rounded={'xl'}
           p={{ base: 6, sm: 6, md: 8 }}
-          spacing={{ base: 8 }}
+          spacing={{ base: 6 }}
           maxW={{ lg: 'lg' }}
         >
           <Stack spacing={4} justifyContent="center">
@@ -151,15 +152,26 @@ export default function JoinCard({
               fontSize={{ base: 'sm', sm: 'md' }}
               textAlign={{ base: 'center', md: 'left' }}
             >
-              We’re looking for amazing associates and student ambassadors!
-              Become a part of our team and skyrocket your career! Please click
-              on the links below to apply.
+              We’re looking for amazing members, associates and student
+              ambassadors! Become a part of our association and build meaningful
+              connections with other fellow Malaysians! Please click on the
+              links below to apply.
             </Text>
           </Stack>
+          <Button
+            fontFamily={'heading'}
+            colorScheme="stripe"
+            color="white"
+            as={Link}
+            href={memberApplication}
+            isExternal
+          >
+            Members
+          </Button>
           <HStack
             justifyContent={{ base: 'center', md: 'left' }}
             alignContent="end"
-            pt={{ sm: 4, md: 8 }}
+            // pt={{ sm: 4, md: 8 }}
           >
             {associateApplication.is_open ? (
               <Link
