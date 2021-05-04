@@ -61,7 +61,7 @@ department:
     member_course: 2nd Year Digital Marketing, Communications and Public Relations
   - member_name: Aiman Muazzam
     member_course: 3rd Year TV, Radio & Media
-    member_school: Institute of Technology, Tralee
+    member_school: Munster Technological University
   - member_name: Caren Lim
     member_course: 2nd Year Pharmaceutical Science
     member_school: Waterford Institute of Technology
