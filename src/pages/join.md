@@ -6,6 +6,7 @@ ambassador_application:
   is_open: false
   application_url: ''
 templateKey: join-template
+member_application: https://www.google.com/
 
 ---
 ### Why should I join MYSAI and what are the benefits?
