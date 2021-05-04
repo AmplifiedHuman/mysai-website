@@ -2,6 +2,13 @@
 label: Join Us
 hide_body: false
 fields:
+- name: member_application
+  type: text
+  config:
+    required: true
+  label: Member Application
+  description: Member Application Link
+  default: https://www.google.com/
 - name: associate_application
   type: field_group
   config: {}
