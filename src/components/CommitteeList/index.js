@@ -41,15 +41,6 @@ const DepartmentAccordion = ({ department }) => {
           <AccordionIcon />
         </AccordionButton>
         <AccordionPanel pb={4}>
-          <Heading
-            size="md"
-            textAlign="center"
-            fontWeight="normal"
-            my="5"
-            color={useColorModeValue('gray.600', 'gray.300')}
-          >
-            {department.description}
-          </Heading>
           <SimpleGrid columns={[1, 1, 2, 3, 4]} spacing={8} textAlign="center">
             {department.team_member.map(member => {
               return <Member member={member} key={member.member_name} />;
