@@ -4,6 +4,7 @@ import {
   Box,
   Container,
   IconButton,
+  Link,
   Stack,
   Text,
   useColorModeValue,
@@ -50,13 +51,20 @@ const Footer = () => {
         as={Stack}
         maxW={'7xl'}
         py={4}
-        direction={{ base: 'column', md: 'row' }}
+        direction={{ base: 'column', md: 'column', lg: 'row' }}
         spacing={4}
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}
       >
         <Text fontSize="md">
           © {moment().year()} MYSAI. All rights reserved
+        </Text>
+        <Text textAlign="center">
+          Made & Designed with{' '}
+          <span role="img" aria-label="yellow heart">
+            💛
+          </span>{' '}
+          by <Link href="https://github.com/AmplifiedHuman">Jason Tee</Link>
         </Text>
         <Stack direction={'row'} spacing={5}>
           <SocialButton
