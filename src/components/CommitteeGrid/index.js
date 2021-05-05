@@ -91,6 +91,7 @@ const CommitteeCard = ({
 };
 
 const CommitteeGrid = ({ committees }) => {
+  committees = committees.sort(() => Math.random() - 0.5);
   return (
     <Flex
       textAlign={'center'}
