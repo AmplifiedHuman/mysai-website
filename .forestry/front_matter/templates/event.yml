@@ -69,5 +69,3 @@ fields:
   label: Event Link
   description: Enter url for online event or google maps link for in person events.
     (If this is a past event, leave empty to remove link)
-pages:
-- src/pages/events/mysai-sample-event.md
