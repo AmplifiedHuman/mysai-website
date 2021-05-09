@@ -1,44 +1,29 @@
 ---
 templateKey: event-template
-title: MYSAI Sample Event Test
+title: 'Discussion Space: Is Penang food or KL food better?'
 description: This is a sample text about the event.
-created_date: 2021-03-21T10:54
-event_start: 2021-04-30T08:02
-event_end: 2021-05-31T10:01
-featured_image: '/v1616035966/image15_mqjweb.jpg'
-location: 31 Leeson Park, Ranelagh, Dublin, D06 E8H1, Ireland
+created_date: 2021-05-09T12:00
+event_start: 2021-05-29T12:00
+event_end: 2021-05-30T12:00
+featured_image: "/v1620577541/penang_debate_s7muyw.jpg"
+location: Virtual
 event_link: ''
----
-
-Here's some sample text describing the event.
-
-## In Summary
-
-The Specialty Coffee Association of America (_SCAA_), founded in 1982, is a non-profit trade organisation for the specialty coffee industry. With members located in more than 40 countries, SCAA represents every segment of the specialty **coffee industry**, including:
-
-![MYSAI Group Photo](/v1616035966/image15_mqjweb.jpg 'MYSAI Group Photo')
-
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
-
-Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
 
 ---
+Have you ever had a thought or an opinion you wanted to discuss or just wanted to find someone relatable? MYSAI will be launching a monthly "Discussion Space", a safe, free, fair environment for students to bring up issues or thoughts that one would wish to share or discuss.
 
-![MYSAI Group Photo](/v1616035966/image15_mqjweb.jpg 'MYSAI Group Photo')
+Whether it’s about racism experiences, the teaching methods in Ireland, gender equality or even is Penang food or KL food better? Any topic that you can think of will stand a chance to be the next chosen topic for our session!
 
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like
+To establish a secure environment for all, students joining our sessions will have to go by our principle,
 
-- producers
-- roasters
-- importers
-- retailers
+> "What happens in the Space, stays in the Space."
 
-> "This is some test quote"
+Mutual respect and privacy are our main priority for all.
 
-![MYSAI Group Photo](/v1616035966/image15_mqjweb.jpg 'MYSAI Group Photo')
+Through this event, we aim to allow student to create a stronger bond, widen one’s horizon and develop a different perspective or better understanding of something. A "Space" to let your guard down, share an opinion you never voiced, or just to bring up something or even anything small that has been bugging your mind!
 
-1. Bird
-2. McHale
-3. Parish
+For this month, our chosen topic is "Is Penang food or KL food better?".
 
-Hopefully everyone can attend! My favourite search engine is [Duck Duck Go](https://duckduckgo.com).
+![Char Kuey Teow ❤️](/v1620578902/penang_debate_1_npw6t7.jpg "Char Kuey Teow ❤️")
+
+Mark your calendars and stay tuned for the upcoming topic! We wish to see you then! For now, good luck with finals!
