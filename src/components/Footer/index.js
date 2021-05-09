@@ -61,9 +61,13 @@ const Footer = () => {
         </Text>
         <Text textAlign="center">
           Made & Designed with{' '}
-          <span role="img" aria-label="yellow heart">
-            💛
-          </span>{' '}
+          <span
+            role="img"
+            aria-label="yellow heart"
+            style={{ marginRight: '8px' }}
+          >
+            💛{' '}
+          </span>
           by <Link href="https://github.com/AmplifiedHuman">Jason Tee</Link>
         </Text>
         <Stack direction={'row'} spacing={5}>
