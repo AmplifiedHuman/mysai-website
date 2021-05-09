@@ -9,7 +9,7 @@ templateKey: join-template
 member_application: https://www.google.com/
 
 ---
-### Why should I join MYSAI and what are the benefits?
+### Why should you join the MYSAI committee?
 
 As an associate, you will
 
@@ -18,7 +18,7 @@ As an associate, you will
 * Develop leadership skills, soft skills and interpersonal skills
 * Your position will add to your CV
 
-![MYSAI Group Picture](/v1620386224/join_us_1_vn10ba.jpg "MYSAI Group Picture")
+![Committee Group Photo](/v1620561638/join_us_2_v2fmda.jpg "Committee Group Photo")
 
 ### What does an associate do?
 
@@ -37,7 +37,7 @@ Associates work under specific departments of their choice towards set goals of 
 
 ### What is the interview process?
 
-Interview is estimated to take about 40-50 minutes and it will be conducted over Zoom. The interview comprises 3 sections: 
+Interview is estimated to take about 40-50 minutes and it will be conducted over Zoom. The interview comprises 3 sections:
 
 * General interview questions
 * MYSAI specific & role specific questions
@@ -47,7 +47,7 @@ Interview is estimated to take about 40-50 minutes and it will be conducted over
 
 Be yourself! Do some research on the role you are applying for but ultimately we just want to get to know you better as a person!
 
-![](/v1620387110/join_us_2_qf06qx.jpg)
+![Associates Working Together](/v1620561638/join_us_1_za1ybb.jpg "Associates Working Together")
 
 ### What are student ambassadors?
 
@@ -69,9 +69,9 @@ There are many departments you can choose from. Here’s a summary on the job sc
 
 **Corporate Relations Department**
 
-* Research for funding opportunities 
-* Act as main contact point for external and corporate parties (including Malaysian Embassy Liaise and update partners and sponsors) 
-* Treasurer on contract proposals and renewals 
+* Research for funding opportunities
+* Act as main contact point for external and corporate parties (including Malaysian Embassy Liaise and update partners and sponsors)
+* Treasurer on contract proposals and renewals
 * Expand MYSAI's network
 
 **Public Relations and Outreach Department**
@@ -83,8 +83,8 @@ There are many departments you can choose from. Here’s a summary on the job sc
 
 **Human Resources Department**
 
-* Create internal recruitment structure 
-* Create engagement phase between new associates and directors 
+* Create internal recruitment structure
+* Create engagement phase between new associates and directors
 * Resolve and mediate any internal affairs
 
 **Welfare Department**
