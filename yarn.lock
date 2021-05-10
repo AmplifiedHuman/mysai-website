@@ -9324,6 +9324,7 @@ fsevents@~2.3.1:
     install-peers: ^1.0.3
     moment: ^2.29.1
     moment-timezone: ^0.5.33
+    netlify-purge-cloudflare-on-deploy: ^1.2.0
     prettier: 2.3.0
     prop-types: ^15.7.2
     react: ^17.0.2
@@ -13489,6 +13490,15 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
+"netlify-purge-cloudflare-on-deploy@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "netlify-purge-cloudflare-on-deploy@npm:1.2.0"
+  dependencies:
+    node-fetch: ^2.6.0
+  checksum: a2e9b1f760e6c0902f5d1449c99733ae299cfd9a07c496860e7bf3e4efa375831f67e006f56154c860b4530d83a67d8a9b05b349eac2fb94902adfbb8c35da4b
+  languageName: node
+  linkType: hard
+
 "next-tick@npm:1, next-tick@npm:^1.1.0":
   version: 1.1.0
   resolution: "next-tick@npm:1.1.0"
@@ -13552,7 +13562,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:2.6.1, node-fetch@npm:^2.5.0, node-fetch@npm:^2.6.1":
+"node-fetch@npm:2.6.1, node-fetch@npm:^2.5.0, node-fetch@npm:^2.6.0, node-fetch@npm:^2.6.1":
   version: 2.6.1
   resolution: "node-fetch@npm:2.6.1"
   checksum: cbb171635e538162b977eac5dfe7a1e07a9a02e991924377a6435502291e2f823d306b95aabc455caebf4a118ccf836868462bc70ccc3095af02bb9da61fda37

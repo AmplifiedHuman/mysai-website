@@ -26,7 +26,7 @@ Associates work under specific departments of their choice towards set goals of 
 
 * Ensure the smooth operation of department and association
 * Given opportunity to lead and take charge of different projects and initiatives
-* Have the opportunity to apply for directorship for next council
+* Have the opportunity to apply for directorship for the next council
 
 ### What are the requirements for the role?
 
