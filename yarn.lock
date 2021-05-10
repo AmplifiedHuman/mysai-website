@@ -9107,6 +9107,18 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
+"gatsby-plugin-nprogress@npm:^3.4.0":
+  version: 3.4.0
+  resolution: "gatsby-plugin-nprogress@npm:3.4.0"
+  dependencies:
+    "@babel/runtime": ^7.12.5
+    nprogress: ^0.2.0
+  peerDependencies:
+    gatsby: ^3.0.0-next.0
+  checksum: c2a56dffca06051edd17e1283054821f2760b523b2dc77debb28ad888cf8d18ede83dc6444e3a118a2681a4370e211f609d6d9aba044b280405a4531c3254286
+  languageName: node
+  linkType: hard
+
 "gatsby-plugin-page-creator@npm:^3.4.1":
   version: 3.4.1
   resolution: "gatsby-plugin-page-creator@npm:3.4.1"
@@ -9316,6 +9328,7 @@ fsevents@~2.3.1:
     gatsby-plugin-image: ^1.4.1
     gatsby-plugin-manifest: ^3.4.0
     gatsby-plugin-netlify-cache: ^1.2.0
+    gatsby-plugin-nprogress: ^3.4.0
     gatsby-plugin-react-helmet: ^4.4.0
     gatsby-plugin-sharp: ^3.4.2
     gatsby-source-filesystem: ^3.4.0
@@ -13742,6 +13755,13 @@ fsevents@~2.3.1:
     gauge: ~2.7.3
     set-blocking: ~2.0.0
   checksum: 0cd63f127c1bbda403a112e83b11804aaee2b58b0bc581c3bde9b82e4d957c7ed0ad3bee499af706cdd3599bb93669d7cbbf29fb500407d35fe75687ac96e2c0
+  languageName: node
+  linkType: hard
+
+"nprogress@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "nprogress@npm:0.2.0"
+  checksum: 652dfcfea776f9d9a2c3ad1f79b4cbd3056a03e7c6884966eab70fb184e8e70bfca9e0343ba89d11aa1ed95370d648fb638fab91b5dc027bdad54c8d37c96478
   languageName: node
   linkType: hard
 

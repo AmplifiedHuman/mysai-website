@@ -46,6 +46,12 @@ module.exports = {
         path: `${__dirname}/src/pages`,
       },
     },
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        showSpinner: true,
+      },
+    },
     `gatsby-plugin-sharp`,
     'gatsby-transformer-sharp',
     `gatsby-plugin-image`,
