@@ -68,7 +68,14 @@ const Footer = () => {
           >
             💛{' '}
           </span>
-          by <Link href="https://github.com/AmplifiedHuman">Jason Tee</Link>
+          by{' '}
+          <Link
+            href="https://jasontcg.com/"
+            color={useColorModeValue('facebook.400', 'twitter.200')}
+            fontWeight="bold"
+          >
+            Jason Tee
+          </Link>
         </Text>
         <Stack direction={'row'} spacing={5}>
           <SocialButton

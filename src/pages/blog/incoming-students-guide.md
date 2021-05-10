@@ -24,7 +24,7 @@ And that’s why we will be sharing our curated list!
 
 > Try to bring things which you can’t get in Ireland (Spices, Milo, etc.). Always bring some extra cash, since it takes a few weeks before you can get access to your new bank account!
 
-### **Things to do after arriving in Ireland**
+## **Things to do after arriving in Ireland**
 
 There are some things to do after arriving in Ireland which include:
 
@@ -41,7 +41,7 @@ There are some things to do after arriving in Ireland which include:
 
 There are plenty of choices of sim card providers in Ireland such as Tesco Three and Vodafone. Typical pre-paid plans range from 10 - 20 euros a month. Unlimited data plan is best as it is cheap and there is unlimited data so you don’t have to spend money on Wifi.
 
-#### Grocery and essentials shopping
+### Grocery and essentials shopping
 
 You should buy essentials such as shampoo, duvet, pillows, foods, cutlery, toilet paper.
 
@@ -49,7 +49,7 @@ You should buy essentials such as shampoo, duvet, pillows, foods, cutlery, toile
 
 > Supermarkets and stores in Ireland usually close early so be sure to get everything before they close!
 
-#### Apply for a bank account
+### Apply for a bank account
 
 Application of a personal bank account is important as it is not safe to keep so much cash at home. Also, you will need at least 3000 euros in the bank account before applying for a IRP card and therefore you should apply for this as soon as possible.
 
@@ -57,7 +57,7 @@ The common banks in Ireland include the Allied Irish Banks (AIB) and Bank of Ire
 
 You should also apply for a student account as this helps avail of certain fees.
 
-#### Make an appointment for IRP card
+### Make an appointment for IRP card
 
 IRP card applications must be submitted within three months of your arrival in Ireland. All students living in Dublin must make an appointment with the Burgh Quay Registration Office via their [appointment booking website](https://burghquayregistrationoffice.inis.gov.ie/). If residing outside of Dublin, an appointment can be made by sending an email to the immigration office of your county.
 
@@ -67,11 +67,11 @@ You will need to bring your passport, proof of address, letter given by college,
 
 If you have further enquiries about the IRP card application process, you should contact the Student Ambassador of your college or the International Office. For more information, please visit the [INIS website](http://www.inis.gov.ie/en/INIS/Pages/first-time-registration).
 
-#### Working permit (PPS Number)
+### Working permit (PPS Number)
 
 To work legally in Ireland, you must obtain a PPS (Personal Public Service) number prior to starting work. It is only applicable if you are above 18 years old. You will need to prepare your passport, IRP card, proof of address and the letter from college. Click[ here](https://www.gov.ie/en/service/12e6de-get-a-personal-public-service-pps-number/#apply-for-a-pps-number-online-at-mywelfareie) to check out more information about the PPS number application process.
 
-#### Transportation
+### Transportation
 
 Public buses are a common and cheap method of transportation in most counties. Purchase of Leap Card will cost cheaper at €1.68 per adult single ticket where the original ticket cost €2.4 each. Check it out to get one: [https://about.leapcard.ie/about/where-to-buy](https://about.leapcard.ie/about/where-to-buy "https://about.leapcard.ie/about/where-to-buy"). If you want to travel between counties, you can go by bus or alternatively by train.
 

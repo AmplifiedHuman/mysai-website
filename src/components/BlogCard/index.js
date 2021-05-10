@@ -22,7 +22,6 @@ export default function BlogCard({
       alignItems="center"
       justifyContent="center"
       rounded="md"
-      bg={useColorModeValue('white', 'gray.900')}
     >
       <Box
         mx="auto"

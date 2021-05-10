@@ -158,16 +158,17 @@ export default function JoinCard({
               links below to apply.
             </Text>
           </Stack>
-          <Button
+          {/* <Button
             fontFamily={'heading'}
             colorScheme="stripe"
             color="white"
             as={Link}
             href={memberApplication}
             isExternal
+            disabled
           >
             Members
-          </Button>
+          </Button> */}
           <HStack
             justifyContent={{ base: 'center', md: 'left' }}
             alignContent="end"
