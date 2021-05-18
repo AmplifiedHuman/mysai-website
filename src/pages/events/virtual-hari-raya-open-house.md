@@ -2,8 +2,8 @@
 templateKey: event-template
 title: Virtual Hari Raya Open House
 created_date: 2021-05-18T01:17
-event_start: 2021-05-22T01:00
-event_end: 2021-05-22T02:00
+event_start: 2021-05-22T13:00
+event_end: 2021-05-22T15:00
 featured_image: "/v1621298578/2021-05/hari_raya_zv8pqr.jpg"
 location: Virtual
 event_link: https://forms.gle/bcxFss6BrvRUPcvo9
