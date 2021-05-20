@@ -6,7 +6,7 @@ ambassador_application:
   is_open: false
   application_url: ''
 templateKey: join-template
-member_application: https://www.google.com/
+member_application: https://forms.gle/6Fq1NTci3dNjz64o7
 
 ---
 ### Why should you join the MYSAI committee?
