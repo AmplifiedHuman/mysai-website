@@ -2,8 +2,8 @@
 templateKey: event-template
 title: Movie Tea Time
 created_date: 2021-05-24T10:43
-event_start: 2021-05-30T02:00
-event_end: 2021-05-30T04:00
+event_start: 2021-05-30T14:00
+event_end: 2021-05-30T16:00
 featured_image: "/v1621892721/2021-05/movie-night-lalaland_zohwnj.jpg"
 location: Discord
 event_link: https://forms.gle/6Fq1NTci3dNjz64o7
@@ -19,4 +19,6 @@ All MYSAI’s committee and members are invited to this exclusive event! Since a
 
 Hopefully, by the end of this event, MYSAI committee and members are able to build a stronger bond and make memorable memories with one another. The movie was selected based upon majority votes from members so since so many individuals are looking forward to it, come and see for yourself what is so great about this movie!
 
-![La La Land Poster](/v1621893390/2021-05/movie-night-lalaland-animation_agqeke.jpg "La La Land Poster")Do remember to prepare your popcorn, snacks and drinks before entering the “free cinema” with us! Hope to see you there! For now, take care and stay safe!
+![La La Land Poster](/v1621893390/2021-05/movie-night-lalaland-animation_agqeke.jpg "La La Land Poster")
+
+Do remember to prepare your popcorn, snacks and drinks before entering the “free cinema” with us! Hope to see you there! For now, take care and stay safe!

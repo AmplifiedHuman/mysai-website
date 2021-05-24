@@ -64,7 +64,7 @@ const Footer = () => {
           <span
             role="img"
             aria-label="yellow heart"
-            style={{ marginRight: '8px' }}
+            style={{ marginRight: '4px' }}
           >
             💛{' '}
           </span>
