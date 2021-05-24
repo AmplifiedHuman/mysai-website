@@ -70,4 +70,5 @@ fields:
   description: Enter url for online event or google maps link for in person events.
     (If this is a past event, leave empty to remove link)
 pages:
+- src/pages/events/movie-tea-time.md
 - src/pages/events/virtual-hari-raya-open-house.md
