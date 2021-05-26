@@ -10,7 +10,6 @@ import {
   SimpleGrid,
   Avatar,
   AvatarGroup,
-  HStack,
   Alert,
   AlertIcon,
   Link,
@@ -128,7 +127,7 @@ export default function JoinCard({
           bg={'white'}
           rounded={'xl'}
           p={{ base: 6, sm: 6, md: 8 }}
-          spacing={{ base: 6 }}
+          spacing={{ base: 5 }}
           maxW={{ lg: 'lg' }}
         >
           <Stack spacing={4} justifyContent="center">
@@ -168,42 +167,37 @@ export default function JoinCard({
           >
             Members
           </Button>
-          <HStack
-            justifyContent={{ base: 'center', md: 'left' }}
-            alignContent="end"
-            // pt={{ sm: 4, md: 8 }}
-          >
-            {associateApplication.is_open ? (
-              <Link
-                href={associateApplication.application_url}
-                textDecoration="none"
-                isExternal
-              >
-                <Button
-                  fontFamily={'heading'}
-                  colorScheme="stripe"
-                  color="white"
-                >
-                  Associates
-                </Button>
-              </Link>
-            ) : (
-              ''
-            )}
-            {ambassadorApplication.is_open ? (
-              <Link href={ambassadorApplication.application_url} isExternal>
-                <Button
-                  fontFamily={'heading'}
-                  colorScheme="stripe"
-                  color="white"
-                >
-                  Ambassadors
-                </Button>
-              </Link>
-            ) : (
-              ''
-            )}
-          </HStack>
+          {associateApplication.is_open ? (
+            <Button
+              href={associateApplication.application_url}
+              textDecoration="none"
+              as={Link}
+              isExternal
+              fontFamily={'heading'}
+              colorScheme="stripe"
+              color="white"
+              w={ambassadorApplication.is_open ? '50%' : 'full'}
+            >
+              Associates
+            </Button>
+          ) : (
+            ''
+          )}
+          {ambassadorApplication.is_open ? (
+            <Button
+              fontFamily={'heading'}
+              colorScheme="stripe"
+              color="white"
+              href={ambassadorApplication.application_url}
+              as={Link}
+              isExternal
+              w={associateApplication.is_open ? '50%' : 'full'}
+            >
+              Ambassadors
+            </Button>
+          ) : (
+            ''
+          )}
           {associateApplication.is_open && ambassadorApplication.is_open ? (
             ''
           ) : (

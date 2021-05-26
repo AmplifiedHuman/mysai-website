@@ -3,8 +3,8 @@ associate_application:
   is_open: false
   application_url: https://google.com
 ambassador_application:
-  is_open: false
-  application_url: ''
+  is_open: true
+  application_url: https://forms.gle/Qqv8b3KRSW7h2vUn9
 templateKey: join-template
 member_application: https://forms.gle/6Fq1NTci3dNjz64o7
 
