@@ -3,8 +3,8 @@ templateKey: event-template
 title: 'Discussion Space: Is Penang food or KL food better?'
 description: This is a sample text about the event.
 created_date: 2021-05-09T12:00
-event_start: 2021-05-29T12:00
-event_end: 2021-05-29T14:00
+event_start: 2021-05-29T13:00
+event_end: 2021-05-29T15:00
 featured_image: '/v1620577541/penang_debate_s7muyw.jpg'
 location: Virtual
 event_link: ''

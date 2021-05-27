@@ -2,8 +2,8 @@
 templateKey: event-template
 title: Discord Cinema
 created_date: 2021-05-24T10:43
-event_start: 2021-05-30T13:00
-event_end: 2021-05-30T15:00
+event_start: 2021-05-30T14:00
+event_end: 2021-05-30T16:00
 featured_image: "/v1621892721/2021-05/movie-night-lalaland_zohwnj.jpg"
 location: Discord
 event_link: https://forms.gle/6Fq1NTci3dNjz64o7
