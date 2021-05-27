@@ -32,7 +32,7 @@ There are some things to do after arriving in Ireland which include:
 
 * Electricity (Metered or Top-up)
 * Hot water
-* Central Hearing
+* Central Heating
 * Lockable doors and windows
 
 > Make sure the accommodation is in good condition (otherwise, take photos and notify the owner/person in charge.)
