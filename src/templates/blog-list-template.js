@@ -111,7 +111,7 @@ const BlogPage = ({ data, pageContext }) => {
         )}
         <Button
           as={Link}
-          to={`/events/${currentPage === 1 ? '' : currentPage}`}
+          to={`/blog/${currentPage === 1 ? '' : currentPage}`}
           bgGradient="linear(to-r, stripe.400,stripe.600)"
           color="white"
         >
