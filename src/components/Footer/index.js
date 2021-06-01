@@ -98,7 +98,7 @@ const Footer = () => {
           </SocialButton>
           <SocialButton
             label={'LinkedIn'}
-            href={'https://www.linkedin.com/company/mysai/about/'}
+            href={'https://www.linkedin.com/company/mysaireland'}
           >
             <FaLinkedinIn />
           </SocialButton>
