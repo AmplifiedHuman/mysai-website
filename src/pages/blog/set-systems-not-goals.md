@@ -29,8 +29,8 @@ This method can be applied to various aspects of your life. Goals such as keepin
 
 Adopted from Atomic Habits book by James Clear
 
-[https://jamesclear.com/atomic-habits](https://jamesclear.com/atomic-habits "https://jamesclear.com/atomic-habits")
+[https://jamesclear.com/atomic-habits](https://jamesclear.com/atomic-habits "Atomic Habits")
 
 For a shorter video illustration, check out this Youtube video
 
-[https://youtu.be/WK-sZjuXA6A](https://jamesclear.com/atomic-habits "https://jamesclear.com/atomic-habits")
+[https://youtu.be/WK-sZjuXA6A](https://youtu.be/WK-sZjuXA6A "the one habit that is changing my life: set systems rather than goals")
