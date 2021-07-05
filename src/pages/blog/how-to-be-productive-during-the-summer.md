@@ -4,7 +4,7 @@ title: How to be productive during the summer
 created_date: 2021-07-05T04:57
 featured_image: "/v1625500534/2021-07/how_to_be_productive_during_the_summer_cover_gfu2tz.jpg"
 is_pinned: false
-author: Cheryl Voon
+author: Terry Tan
 
 ---
 > Don't be fooled by the calendar. There are only as many days in the year as you make use of. One man gets only a week's value out of a year while another man gets a full year's value out of a week **- Charles Richard**
