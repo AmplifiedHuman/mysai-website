@@ -45,4 +45,5 @@ fields:
   label: Author
   description: Author of the blog, can contain multiple names
 pages:
+- src/pages/blog/how-to-be-productive-during-the-summer.md
 - src/pages/blog/set-systems-not-goals.md
