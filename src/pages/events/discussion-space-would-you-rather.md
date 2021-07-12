@@ -2,8 +2,8 @@
 templateKey: event-template
 title: 'Discussion Space: Would you Rather?'
 created_date: 2021-07-12T11:01
-event_start: 2021-07-18T01:00
-event_end: 2021-07-18T02:00
+event_start: 2021-07-18T13:00
+event_end: 2021-07-18T14:00
 featured_image: "/v1625834029/2021-07/discussion_space_would_you_rather_dnbksz.jpg"
 location: Virtual
 event_link: https://docs.google.com/forms/d/e/1FAIpQLSfBESl9wVZLatImwSnGrE0CdBJ5vvNeN9Ebpx5_VN5gdg4Suw/viewform
