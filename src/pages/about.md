@@ -39,12 +39,6 @@ committee_list:
     member_school: National College of Ireland
     member_position: Director of Human Resource Department
 - team_member:
-    member_course: 2nd Year Business Information Systems
-    member_photo: "/v1618960849/damien_khaw_ug1otz.jpg"
-    member_name: Damien Khaw
-    member_school: Galway-Mayo Institute of Technology
-    member_position: Director of Public Relations
-- team_member:
     member_course: 2nd Year Computing in Software Development
     member_photo: "/v1618950467/gabriel_hang_vbircu.jpg"
     member_name: Gabriel Hang
@@ -153,45 +147,51 @@ department:
     a type specimen book.
 - department_name: Student Ambassadors
   team_member:
-  - member_name: Yuki Cheah
-    member_course: 2nd Year Actuarial & Financial Maths
-    member_school: Dublin City University
+  - member_name: Janet Chia
+    member_course: 3rd Year Mechanical Engineering
+    member_school: Limerick Institute of Technology
+  - member_name: Hoo Chang Ru
+    member_course: 1st Year Medicine
+    member_school: Trinity College Dublin
+  - member_name: Durgaashini Sagaran
+    member_course: 3rd Year Computer Forensic and Security
+    member_school: Waterford Institute of Technology
+  - member_name: Hui Yi Chong
+    member_course: 3rd Year Medicine
+    member_school: Royal College of Surgeons in Ireland
+  - member_name: Jasmine Lim
+    member_course: 2nd Year Medicine
+    member_school: University College Dublin
+  - member_name: Sonya San
+    member_course: 3rd Year Law
+    member_school: University of Limerick
+  - member_name: Calvin Wong
+    member_course: 2nd Year Software Design
+    member_school: Athlone Institute of Technology
+  - member_name: Johan Goh
+    member_course: 3rd Year Business Information Systems
+    member_school: Galway-Mayo Institute of Technology
+  - member_name: Pravina Moorthy
+    member_course: 4th Year Supply Chain Management
+    member_school: Institute of Technology Carlow
+  - member_name: Anderson Teo
+    member_course: 3rd Year Law
+    member_school: Letterkenny Institute of Technology
+  - member_name: Ho Pei Nie
+    member_course: 2nd Year Medicine
+    member_school: National University of Ireland, Galway
   - member_name: Tania Bhinder
-    member_course: 2nd Year Dentistry
+    member_course: 3rd Year Dentistry
     member_school: University College Cork
   - member_name: Tan Jer Kent
     member_school: Athlone Institute of Technology
-    member_course: 1st Year Mechanical Engineering
-  - member_name: Shiuan Chiam
-    member_school: Institute of Technology, Carlow
-    member_course: 4th Year Aerospace Engineering
+    member_course: 2nd Year Mechanical Engineering
   - member_name: Lin Yuan Chong
     member_school: Technological University Dublin (Blanchardstown)
-    member_course: 3rd Year General Computing
-  - member_name: Jason Tong
-    member_course: 3rd Year Civil Engineering
-    member_school: Dundalk Institute of Technology
-  - member_name: Ian Chiam
-    member_school: Limerick Insitute of Technology
-    member_course: 4th Year Electronic Engineering
+    member_course: 4th Year General Computing
   - member_name: E Qing Kee
-    member_course: 2nd Year Psychology
+    member_course: 3rd Year Psychology
     member_school: National College of Ireland
-  - member_name: Damien Khaw
-    member_course: 2nd Year Business Information Systems
-    member_school: Galway-Mayo Institute of Technology
-  - member_name: Ryan Yaw
-    member_school: University College Dublin
-    member_course: 3rd Year Music
-  - member_name: Adeebah
-    member_school: Trinity College Dublin
-    member_course: 2nd Year Medicine
-  - member_name: Alissa See
-    member_course: 3rd Year Arts with Data Science
-    member_school: National University of Ireland, Galway
-  - member_name: Anderson Teo
-    member_course: 2nd Year Law
-    member_school: Letterkenny Institute of Technology
   description: Lorem Ipsum has been the industry's standard dummy text ever since
     the 1500s, when an unknown printer took a galley of type and scrambled it to make
     a type specimen book.
