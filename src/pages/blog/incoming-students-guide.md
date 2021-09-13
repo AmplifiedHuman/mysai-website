@@ -97,43 +97,29 @@ You should also apply for a student account as this helps avail of certain fees.
 
 ### Make an appointment for IRP card
 
-> Malaysia nationals do not require a visa but an IRP card is required
+> Malaysia nationals do not require a visa but an IRP card is required.
 
-IRP card applications must be submitted within three months of your arrival in Ireland. All students living in Dublin must make an appointment with the Burgh Quay Registration Office via their [appointment booking website](https://burghquayregistrationoffice.inis.gov.ie/). 
+The Irish Residence Permit card (IRP) is not an identity card but a registration certificate. You must carry your IRP with you at all times and present it to an immigration officer or a member of An Garda Síochána (police) if requested within Ireland. (the GNIB card is the old version of IRP card)
+
+IRP card applications must be submitted within three months of your arrival in Ireland. All students living in Dublin must make an appointment with the Burgh Quay Registration Office via their [appointment booking website](https://burghquayregistrationoffice.inis.gov.ie/).
 
 **Dublin students**
 
-1. Make an online appointment ([_https://burghquayregistrationoffice.inis.gov.ie/_](https://burghquayregistrationoffice.inis.gov.ie/ "https://burghquayregistrationoffice.inis.gov.ie/")) to book a slot.
-2. Select “All” for **_category and subcategory_**
-
-
-3. Select “no” for (new students) **_I have a GNIB card or I have been registered before_**
-
-
-4. Select “no” for **_family application_**
-
-
-5. Select “yes” and fill in your passport number for the **_passport column._**
-
-
-6. Then click “**look for appointment**”.
-
-
-7. Choose “**closest to today**”
-
-
-8. If there is no slot for the appointment date, then you have to try multiple times. Example: 10 mins before and after their working and lunch hour (13:00-14:00), until you get it.
-
-
-9. Please make sure you are able to attend the appointment in person on that date.
-
-
+ 1. Make an online appointment ([_https://burghquayregistrationoffice.inis.gov.ie/_](https://burghquayregistrationoffice.inis.gov.ie/ "https://burghquayregistrationoffice.inis.gov.ie/")) to book a slot.
+ 2. Select “All” for **_category and subcategory_**
+ 3. Select “no” for (new students) **_I have a GNIB card or I have been registered before_**
+ 4. Select “no” for **_family application_**
+ 5. Select “yes” and fill in your passport number for the **_passport column._**
+ 6. Then click “**look for appointment**”.
+ 7. Choose “**closest to today**”
+ 8. If there is no slot for the appointment date, then you have to try multiple times. Example: 10 mins before and after their working and lunch hour (13:00-14:00), until you get it.
+ 9. Please make sure you are able to attend the appointment in person on that date.
 10. After you get a slot, a confirmation email will be sent to you. Just follow the instructions stated in the email.
-11. Immigration office address:       Garda National Immigration Bureau   
-    Department of Justice and Equality   
-    13-14 Burgh Quay   
-    Dublin 2   
-    D02 XK70   
+11. Immigration office address:       Garda National Immigration Bureau  
+    Department of Justice and Equality  
+    13-14 Burgh Quay  
+    Dublin 2  
+    D02 XK70  
     Ireland
 12. Remember to bring your documents on the day of your appointment
 
