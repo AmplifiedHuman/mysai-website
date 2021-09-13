@@ -4,7 +4,7 @@ title: Guide for incoming students
 created_date: 2021-04-15T08:12
 featured_image: "/v1620600509/incoming_students_cover_ci3mby.jpg"
 is_pinned: true
-author: Caren Lim, Jason Tee
+author: Caren Lim, Jason Tee, Shao Ying, Cheryl Voon
 
 ---
 Moving to Ireland can be an exhilarating and scary experience for a lot of new students, so we included some useful tips and information below so you can feel at ease in Ireland as soon as possible. This blog post will be updated frequently, so feel free to let us know if there are things that we missed!
