@@ -3,6 +3,7 @@ import {
   Box,
   Flex,
   Stack,
+  HStack,
   Heading,
   Text,
   Container,
@@ -167,45 +168,47 @@ export default function JoinCard({
           >
             Members
           </Button>
-          {associateApplication.is_open ? (
-            <Button
-              href={associateApplication.application_url}
-              textDecoration="none"
-              as={Link}
-              isExternal
-              fontFamily={'heading'}
-              colorScheme="stripe"
-              color="white"
-              w={ambassadorApplication.is_open ? '50%' : 'full'}
-            >
-              Associates
-            </Button>
-          ) : (
-            ''
-          )}
-          {ambassadorApplication.is_open ? (
-            <Button
-              fontFamily={'heading'}
-              colorScheme="stripe"
-              color="white"
-              href={ambassadorApplication.application_url}
-              as={Link}
-              isExternal
-              w={associateApplication.is_open ? '50%' : 'full'}
-            >
-              Ambassadors
-            </Button>
-          ) : (
-            ''
-          )}
-          {associateApplication.is_open && ambassadorApplication.is_open ? (
-            ''
-          ) : (
-            <Alert status="warning" variant="subtle" color={'gray.800'}>
-              <AlertIcon />
-              {message}
-            </Alert>
-          )}
+          <HStack spacing={3}>
+            {associateApplication.is_open ? (
+              <Button
+                href={associateApplication.application_url}
+                textDecoration="none"
+                as={Link}
+                isExternal
+                fontFamily={'heading'}
+                colorScheme="stripe"
+                color="white"
+                w={ambassadorApplication.is_open ? '50%' : 'full'}
+              >
+                Associates
+              </Button>
+            ) : (
+              ''
+            )}
+            {ambassadorApplication.is_open ? (
+              <Button
+                fontFamily={'heading'}
+                colorScheme="stripe"
+                color="white"
+                href={ambassadorApplication.application_url}
+                as={Link}
+                isExternal
+                w={associateApplication.is_open ? '50%' : 'full'}
+              >
+                Ambassadors
+              </Button>
+            ) : (
+              ''
+            )}
+            {associateApplication.is_open && ambassadorApplication.is_open ? (
+              ''
+            ) : (
+              <Alert status="warning" variant="subtle" color={'gray.800'}>
+                <AlertIcon />
+                {message}
+              </Alert>
+            )}
+          </HStack>
         </Stack>
       </Container>
     </Box>

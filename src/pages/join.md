@@ -1,7 +1,7 @@
 ---
 associate_application:
-  is_open: false
-  application_url: https://google.com
+  is_open: true
+  application_url: https://forms.gle/XtgA7KmUZHPBb4pH9
 ambassador_application:
   is_open: true
   application_url: https://forms.gle/Qqv8b3KRSW7h2vUn9
